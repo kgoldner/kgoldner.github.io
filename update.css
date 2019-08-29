@@ -424,10 +424,19 @@ table ol {
 }
 
 .rg table, .rg th, .rg td{
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     border-collapse: collapse;
     vertical-align: top;
-    padding: 0px 5px;
+    padding: 5px 10px;
+}
+
+.module tr, .module td, .module th{
+    border-bottom: 4px double black;
+    font-size: 120%;
+}
+
+.last tr, .last td{
+    border-bottom: 2px solid black;
 }
 
 .break {
