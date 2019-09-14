@@ -10,14 +10,13 @@
 	
 	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" /> 
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="../css/main.css" type="text/css"/>
-        <link rel="stylesheet" href="../css/syntax.css" type="text/css"/>
-        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+        <!--link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"-->
+	<!--link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet"-->
 	<link rel="stylesheet" href="../update.css" type="text/css"/>
 
-	 <link rel="stylesheet" href="/cal.css">
-         <script src="/cal.js"></script>	
+	<script src="jquery-3.3.1.min.js"></script>
+	 <link rel="stylesheet" href="cal.css">
+         <script src="uwcal.js"></script>	
 </head>
 
 <body>
@@ -29,10 +28,7 @@
     <h1>Columbia Theory Seminar, Fall 2019</h1>
 
 
-    <!--p>Organizer: <a href="https://www.kiragoldner.com">Kira Goldner</a><br />
-    Email: kgoldner [at] cs [dot] columbia [dot] edu <br /><br />
-    
-    Meetings: Daily 3:15-3:30pm, 3rd floor lounge, Simons Institute </p--> <br />
+<br />
     
     <!-- JS calendar -->
     <div class="row mt-3">
@@ -41,7 +37,7 @@
               <span class="align-text-top">
                          [ <a id="earlierEvents" role="link" class="activelink" href="#" onclick="earlierEvents()">earlier</a> |
                          <a id="laterEvents" role="link" class="activelink" href="#" onclick="laterEvents()">later</a> ]
-                         &nbsp; [ <a class="" href="https://calendar.google.com/calendar/b/4?cid=Y29sdW1iaWEuZWR1XzFoaTFjYzJocmZ0NDFtNm05a204aWIxa3RjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">google calendar</a> ]</span>
+                         &nbsp; [ <a class="" href="https://www.google.com/calendar/embed?src=21jc1bfgri142rqq91i43lt6jo%40group.calendar.google.com&ctz=America/Los_Angeles">google calendar</a> ]</span>
 			 <div class="row mt-3 pl-4 mb-4">
 				<div id="sched">
 				  <div class="panel-group" id="accordionCal">
@@ -52,191 +48,7 @@
 	</div>		 
 			 
 			 
-    
-    <!--center><table class="rg">
-    <tr class="module"> <th style="width: 100px;">Week</th><th style="width: 150px;">Date</th> <th style="width: 150px;">Speaker</th>  <th style="width: 30px;">Photo</th> </tr>
- <tr>
-    <td> Week 1 </td>
-    <td> Monday, 8/26 </td>
-    <td> <a href="http://stat.haifa.ac.il/~gweiss/">Gideon Weiss</a> </td>
-    <td></td>
- </tr>
-  <tr>
-    <td> </td>
-    <td> Tuesday, 8/27 </td>
-    <td> <a href="https://www.cs.drexel.edu/~gkatz/">Vasilis Gkatzelis</a> </td>
-    <td></td>
- </tr>
-   <tr>
-    <td> </td>
-    <td> Wednesday, 8/28 </td>
-    <td> <a href="https://www.sites.google.com/site/ravijagadeesan/">Ravi Jagadeesan</a> </td>
-    <td></td>
- </tr>
-    <tr>
-    <td> </td>
-    <td> Thursday, 8/29 </td>
-    <td> <a href="https://www.cs.cmu.edu/~dwajc/">David Wajc</a> </td>
-    <td></td>
- </tr>
-     <tr class="last">
-    <td> </td>
-    <td> Friday, 8/30 </td>
-    <td> <a href="https://www.parisschoolofeconomics.eu/en/demange-gabrielle/">Gabrielle Demange</a> </td>
-    <td></td>
- </tr>
-  <tr>
-    <td> Week 2 </td>
-    <td> Monday, 9/2 </td>
-    <td> (Labor Day) </td>
-    <td></td>
- </tr>
-  <tr>
-    <td> </td>
-    <td> Tuesday, 9/3 </td>
-    <td> <a href="http://lyariv.mycpanel.princeton.edu//">Leeat Yariv</a> </td>
-    <td><a href="whiteboards/yariv.jpg">1</a></td>
- </tr>
-   <tr>
-    <td> </td>
-    <td> Wednesday, 9/4 </td>
-    <td> <a href="http://www.t8el.com/">Alex Teytelboym</a> </td>
-    <td><a href="whiteboards/teytelboym1.JPG">1</a>,<a href="whiteboards/teytelboym2.JPG">2</a></td>
- </tr>
-    <tr>
-    <td> </td>
-    <td> Thursday, 9/5 </td>
-    <td> (Workshop) </td>
-    <td></td>
- </tr>
-     <tr class="last">
-    <td> </td>
-    <td> Friday, 9/6 </td>
-    <td> (Workshop) </td>
-    <td></td>
- </tr>
-   <tr>
-    <td> Week 3 </td>
-    <td> Monday, 9/9 </td>
-    <td> <a href="https://www.bklaus.net/">Bettina Klaus</a> </td>
-    <td><a href="whiteboards/klaus.jpg">1</a></td>
- </tr>
-  <tr>
-    <td> </td>
-    <td> Tuesday, 9/10 </td>
-    <td> <a href="http://www.its.caltech.edu/~fede/">Federico Echenique</a> </td>
-    <td><a href="whiteboards/echenique.jpg">1</a></td>
- </tr>
-   <tr>
-    <td> </td>
-    <td> Wednesday, 9/11 </td>
-    <td> <a href="https://www.irif.fr/users/mauras/index">Simon Mauras</a> </td>
-    <td><a href="whiteboards/mauras.JPG">1</a></td>
- </tr>
-    <tr>
-    <td> </td>
-    <td> Thursday, 9/12 </td>
-    <td> <a href="https://www8.gsb.columbia.edu/cbs-directory/detail/naa2165">Nick Arnosti</a> </td>
-    <td><a href="whiteboards/arnosti.JPG">1</a></td>
- </tr>
-     <tr class="last">
-    <td> </td>
-    <td> Friday, 9/13 </td>
-    <td> <a href="http://jugal.ise.illinois.edu/">Jugal Garg</a> </td>
-    <td></td>
- </tr>
-    <tr>
-    <td> Week 4 </td>
-    <td> Monday, 9/16 </td>
-    <td> (Workshop) </td>
-    <td></td>
- </tr>
-  <tr>
-    <td> </td>
-    <td> Tuesday, 9/17 </td>
-    <td> (Workshop) </td>
-    <td></td>
- </tr>
-   <tr>
-    <td> </td>
-    <td> Wednesday, 9/18 </td>
-    <td> (Workshop) </td>
-    <td></td>
- </tr>
-    <tr>
-    <td> </td>
-    <td> Thursday, 9/19 </td>
-    <td> <a href="https://jleshno.weebly.com/">Jacob Leshno</a> </td>
-    <td></td>
- </tr>
-     <tr class="last">
-    <td> </td>
-    <td> Friday, 9/20 </td>
-    <td> <a href="https://chamsihssaine.github.io/">Chamsi Hssaine</a> </td>
-    <td></td>
- </tr>
-  </tr>
-    <tr>
-    <td> Week 5 </td>
-    <td> Monday, 9/23 </td>
-    <td> <a href="https://www.ics.uci.edu/~jamesal1/">James Liu</a> </td>
-    <td></td>
- </tr>
-  <tr>
-    <td> </td>
-    <td> Tuesday, 9/24 </td>
-    <td> <a href="http://algo.cs.uni-frankfurt.de/~mhoefer/">Martin Hoefer</a> </td>
-    <td></td>
- </tr>
-   <tr>
-    <td> </td>
-    <td> Wednesday, 9/25 </td>
-    <td> <a href="http://assafromm.weebly.com/">Assaf Romm</a> </td>
-    <td></td>
- </tr>
-    <tr>
-    <td> </td>
-    <td> Thursday, 9/26 </td>
-    <td> <a href="https://www.cs.princeton.edu/~dm23/">Divyarthi Mohan</a> </td>
-    <td></td>
- </tr>
-     <tr class="last">
-    <td> </td>
-    <td> Friday, 9/27 </td>
-    <td> <a href="https://www.kiragoldner.com">Kira Goldner</a> </td>
-    <td></td>
- </tr>
-     <tr>
-    <td> Week 6 </td>
-    <td> Monday, 9/30 </td>
-    <td> <a href="http://www.columbia.edu/~yf2414/index.html">Yuri Faenza</a> </td>
-    <td></td>
- </tr>
-  <tr>
-    <td> </td>
-    <td> Tuesday, 10/1 </td>
-    <td> (Workshop) </td>
-    <td></td>
- </tr>
-   <tr>
-    <td> </td>
-    <td> Wednesday, 10/2 </td>
-    <td> (Workshop) </td>
-    <td></td>
- </tr>
-    <tr>
-    <td> </td>
-    <td> Thursday, 10/3 </td>
-    <td> <a href="https://www.ics.uci.edu/~kgajulap/">Karthik Gajulapalli</a> </td>
-    <td></td>
- </tr>
-     <tr>
-    <td> </td>
-    <td> Friday, 10/4 </td>
-    <td> <a href="https://www.sites.google.com/site/francisbloch1/">Francis Bloch</a> </td>
-    <td></td>
- </tr>
- </table></center-->
+   
 
 <br /><br />
 
@@ -244,6 +56,12 @@
 
     <br /><br /><br /><br /></div></div>
 
+<script>
+   $(document).ready(function() {
+      $.getScript('//apis.google.com/js/client.js?onload=handleClientLoad');
+      pushEventTable();
+   });
+</script>
 
   </body>
 
