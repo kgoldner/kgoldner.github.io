@@ -27,10 +27,9 @@ function checkAuth() {
 function handleAuthResult(authResult) {
     if (authResult) { makeApiCall(); }
      else {
-                $('#sched').append('<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=275&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=columbia.edu_1hi1cc2hrft41m6m9km8ib1ktc%40group.calendar.google.com&amp;ctz=America%2FNew_York" style=" border-width:0 " width="720" height="275" frameborder="0" scrolling="no"></iframe>');
+                $('#sched').append('<iframe src="https://calendar.google.com/calendar/b/4/embed?height=275&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y29sdW1iaWEuZWR1XzFoaTFjYzJocmZ0NDFtNm05a204aWIxa3RjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%230054a5&amp;mode=AGENDA&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="750" height="275" frameborder="0" scrolling="no"></iframe>');
      }
 }
-
 
 function padZero(s) {
         var q = s.toString();
