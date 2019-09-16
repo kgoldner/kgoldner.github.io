@@ -78,7 +78,7 @@ function makeApiCall() {
 	gapi.client.load('calendar', 'v3', function() {
 
     var request = gapi.client.calendar.events.list({
-      'calendarId': '21jc1bfgri142rqq91i43lt6jo@group.calendar.google.com',
+      'calendarId': 'columbia.edu_1hi1cc2hrft41m6m9km8ib1ktc@group.calendar.google.com',
       'singleEvents': true,
       'timeMin':  beforeDate.toISOString(),
       'timeMax': afterDate.toISOString(),
