@@ -7,19 +7,19 @@
 .curr
 {
     font-weight: bold;
-    color: firebrick;
+    color: #2A3474;
 }
 
 .events td
 {
     font-size: 100%;
-    color: firebrick;
+    color: #2A3474;
     vertical-align: top;
 }
 
 .event
 {
-   color: firebrick;
+   color: #2A3474;
 }
 
 .description
