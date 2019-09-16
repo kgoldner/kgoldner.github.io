@@ -1,6 +1,6 @@
 
-        var clientId = '997719740599-pa5dognuv0nkd02i8uqk2f5cb565999t.apps.googleusercontent.com';
-        var apiKey = 'AIzaSyBQG4_qSUAo2b9Mtr_L_KhODLOYgneRlgc';
+        var clientId = 'columbia.edu_1hi1cc2hrft41m6m9km8ib1ktc@group.calendar.google.com';
+        var apiKey = 'AIzaSyCGksWEXCn-b22fvkEsT0gBOZ0xS6AFHs0';
         var scopes = 'https://www.googleapis.com/auth/calendar';
         var numAfter = 3;
         var numBefore = 3;
