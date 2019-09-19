@@ -2,8 +2,8 @@
         var clientId = '677504470356-fs29dpkse85oj2ocfndevavn0bt798n2.apps.googleusercontent.com';
         var apiKey = 'AIzaSyCGksWEXCn-b22fvkEsT0gBOZ0xS6AFHs0';
         var scopes = 'https://www.googleapis.com/auth/calendar';
-        var numAfter = 3;
-        var numBefore = 3;
+        var numAfter = 5;
+        var numBefore = 2;
         var numIncrement = 4;
         var oldtable = false;
         var evtable = document.createElement('table');
