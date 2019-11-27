@@ -32,7 +32,6 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 div#headpane {
 
-    text-align:justify;
     position:relative;
     margin-left:auto;
     margin-right:auto;
@@ -45,7 +44,6 @@ div#headpane {
 
 div#contentpane {
     
-    text-align:justify;
     position:relative;
     margin-top: -10px;
     margin-left:auto;
