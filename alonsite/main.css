@@ -316,7 +316,7 @@ div#pagetitle{
     text-align:left;
     margin-top: 3%;
     /*margin-left: 10%;*/
-    margin-left: 20%;
+    margin-left: 17%;
     margin-bottom: 3%; /*previously 4*/
 
 }
@@ -333,6 +333,6 @@ div#pagetitle{
 
 #name {
     display: inline-block;
-    width: 400px;
+    width: 225px;
     vertical-align: top;
 }
