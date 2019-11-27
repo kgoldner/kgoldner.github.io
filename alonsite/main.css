@@ -316,7 +316,9 @@ div#pagetitle{
     text-align:left;
     margin-top: 3%;
     /*margin-left: 10%;*/
-    margin-left: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
     margin-bottom: 3%; /*previously 4*/
 
 }
@@ -328,11 +330,11 @@ div#pagetitle{
     height: 150px;
     display: inline-block;
     margin-bottom: 10px;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
 }
 
 #name {
     display: inline-block;
-    width: 325px;
+    width: 310px;
     vertical-align: top;
 }
