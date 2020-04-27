@@ -1,5 +1,3 @@
-.darkmode {
-
 body {
     background-color: #404040;
     -webkit-animation-delay: 0.1s;
@@ -475,5 +473,4 @@ table ol {
 
 .nav a:hover {
     color: #FFCC00;
-}
 }
