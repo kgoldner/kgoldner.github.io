@@ -12,7 +12,7 @@ window.onload = _ =>
  
 function swapStyleSheet(){
     var href = document.getElementById('theme').getAttribute('href');
-    var new_href = 'updated.css';
+    var new_href = 'update.css';
 
     if (href == 'updated.css') {
         new_href = 'darkmode.css';
