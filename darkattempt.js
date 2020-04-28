@@ -15,7 +15,7 @@ function swapStyleSheet(){
     var new_href = 'update.css';
 
     if (href == 'update.css') {
-        new_href = 'darkmode.css';
+        new_href = 'dark.css';
     }
 
     document.getElementById('theme').setAttribute('href', new_href);
