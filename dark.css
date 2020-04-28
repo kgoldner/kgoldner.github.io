@@ -463,7 +463,8 @@ table ol {
 
 .nav table {
     border: none;
-    padding: 0px 215px;
+    /*padding: 0px 215px;*/
+    padding: 0px 115px;
 }
 
 .nav tr, .nav td, .nav th {
@@ -472,5 +473,18 @@ table ol {
 }
 
 .nav a:hover {
+    color: #FFCC00;
+}
+
+.darktoggle {
+    color: #3dae88;
+    background-color: #404040;
+    border-color: #404040;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-size: 100%;
+}
+
+.darktoggle:hover {
     color: #FFCC00;
 }

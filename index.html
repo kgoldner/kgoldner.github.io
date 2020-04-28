@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="update.css" />
+	<!-- <link rel="stylesheet" type="text/css" id="theme" href="dark.css"> -->
 	
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57683203-1"></script>
 <script>
@@ -28,8 +29,6 @@
 
 <div id="headpane">
 	
-	<!-- &#9830; -->
-
     <div id="pagetitle">
         <div id="headerimg"><img src="images/headshotnew.jpg" width="150px"><!--img src="images/me.png" width="150px" /--></div>
         <div id="name"><p class="myname">Kira Goldner</p>
@@ -44,6 +43,7 @@
                 <td><a href="#publications">Publications</a></td>
                 <td> <a href="cv.pdf" target="_blank">CV</a></td>
                 <td><a href="#resources">Resources</a></td>
+                <td><button class="colormode darktoggle" onclick="swapStyleSheet()">Dark/Light</button></td>
             </tr>
         </table>
         <!--hr class="bar" /-->
@@ -165,7 +165,7 @@
     <br /><br /><br /><br /></div></div>
 
     
-    <div id="footer"> Created by Kira Goldner | Updated March 2020
+    <div id="footer"> Created by Kira Goldner | Updated April 2020
         <br /></div>
 
   </body>
@@ -174,3 +174,4 @@
 
 </html>
 
+<script src="toggledark.js"></script>
