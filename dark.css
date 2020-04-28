@@ -480,6 +480,7 @@ table ol {
     color: #3dae88;
     background-color: #404040;
     border-color: #404040;
+    border: none;
     font-family: 'Roboto', sans-serif;
     font-size: medium;
     font-size: 100%;
