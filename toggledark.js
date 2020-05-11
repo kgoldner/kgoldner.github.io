@@ -22,5 +22,6 @@ function swapStyleSheet(){
         localStorage.setItem("sheet", new_href);
 }
 
-/*window.onload = _ =>
-    swapStyleSheet();*/
+window.onload = _ =>
+    let href = localStorage.getItem("sheet") || "update.css";
+    document.getElementById('theme').setAttribute('href', href);
