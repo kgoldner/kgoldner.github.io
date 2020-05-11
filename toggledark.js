@@ -20,7 +20,7 @@ function swapStyleSheet(){
 
     document.getElementById('theme').setAttribute('href', new_href);
         localStorage.setItem("sheet", new_href);
-    }
+}
 
-window.onload = _ =>
-    swapStyleSheet();
+/*window.onload = _ =>
+    swapStyleSheet();*/
