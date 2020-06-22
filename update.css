@@ -43,7 +43,7 @@ div#contentpane {
     color: #404040;
     font-family: 'Titillium Web', Arial, sans-serif;
     /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
-    font-size:100%;
+    font-size:110%;
     width:auto;
     width: 75%; /*can change to 1000, or min-width: 910px;    950px is prev*/
     background-color: #FFFFFF;
@@ -195,7 +195,7 @@ h2{
     position: relative;
     font-family: 'Titillium Web', Arial, sans-serif;
     top: 0px;
-    font-size:95%;
+    font-size:115%;
     float: left;
     width: 100%;
     color: #404040;
