@@ -496,14 +496,24 @@ table ol {
 
 .darktoggle {
     color: #FFFFFF;
-    background-color: #222222;
+    /*background-color: #222222;*/
     border-color: #222222;
     border: none;
     font-family: 'Roboto', sans-serif;
     font-size: medium;
     font-size: 100%;
+    background: url("images/light-dark.png") no-repeat center center;
+    width: 75px;
+    height: 75px;    
 }
 
 .darktoggle:hover {
     color: #FFCC00;
+}
+
+.lightdark {
+    position: fixed;
+    right: 25px;
+    top: 75px;
+    /*z-index: 2;*/
 }
