@@ -43,9 +43,9 @@ div#contentpane {
     color: #404040;
     font-family: 'Titillium Web', Arial, sans-serif;
     /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
-    font-size:110%;
+    font-size:120%;
     width:auto;
-    width: 75%; /*can change to 1000, or min-width: 910px;    950px is prev*/
+    width: 85%; /*can change to 1000, or min-width: 910px;    950px is prev*/
     background-color: #FFFFFF;
     /*border-width:4pt;*/
     /*border-style:solid;*/
@@ -445,45 +445,75 @@ table ol {
 
 .nav {
     width: 100%;
-    background-color: #FFFFFF;
-    border-color: #404040;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    color: #404040;
-    padding: 10px 0px;
-    margin-top: 20px;
+    background-color: #222222;  /*#247E60;*/ /*#3dae88;*/
+    border-color: #222222;
+    color: #FFFFFF;
+    margin-top: -40px;
+    margin-left: -8px;
     margin-bottom: 20px;
-    padding-left: auto;
-    padding-right: auto;
     text-align: center;
-    font-size: 120%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 140%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
 }
 
-.nav table {
-    border: none;
-    padding: 0px 115px;
+.nav div {
+    padding: 0px 5px;
 }
 
-.nav tr, .nav td, .nav th {
-    border: none;
-    padding: 0px 50px;
+.nav a {
+    color: #FFFFFF;
 }
 
 .nav a:hover {
     color: #FFCC00;
 }
 
+.links {
+    /*min-width: 110px;*/
+}
+
+.headname {
+    font-family: 'Titillium Web', Optima, Verdana, sans-serif;
+    color: #FFCC00;
+    font-weight: bold;
+    font-size: 170%;
+    /*min-width: 200px;*/
+}
+
+.navbar {
+    margin: 0px auto;
+}
+
+.on {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
 .darktoggle {
-    color: #2d9e78;
-    background-color: #FFFFFF;
-    border-color: #FFFFFF;
+    color: #FFFFFF;
+    /*background-color: #222222;*/
+    border-color: #222222;
     border: none;
     font-family: 'Roboto', sans-serif;
     font-size: medium;
     font-size: 100%;
+    background: url("images/light-dark.png") no-repeat center center;
+    width: 50px;
+    height: 50px;    
 }
 
 .darktoggle:hover {
     color: #FFCC00;
 }
 
+.lightdark {
+    position: fixed;
+    right: 37px;
+    top: 88px;
+    z-index: 2;
+}

@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" id="theme" href="update.css" />
-	<!-- <link rel="stylesheet" type="text/css" id="theme" href="dark.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" id="theme" href="darknew.css"> -->
 	
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57683203-1"></script>
 <script>
@@ -27,8 +27,22 @@
 
 <body>
 
+    <div class="nav">  
+                <div class="headname">Kira Goldner</div>    
+                <div class="on">About</div>        
+                <div class="off"><a href="research.html">Research</a></div>
+                <div class="off"><a href="resources.html">Resources</a></div>
+                <div class="off"> <a href="cv.pdf" target="_blank">CV</a></div>                
+                <!--div class="off"><button class="colormode darktoggle" onclick="swapStyleSheet()">Dark/Light</button></div-->
+                <div class="links">
+                        <a href="https://dblp.org/pers/g/Goldner:Kira.html"><img src="images/dblp-light.png" height="30px" /></a>
+                        <a href="https://twitter.com/kiragoldner"><img src="images/twitter-light.png" height="30px" /></a>
+                        <a href="https://scholar.google.com/citations?user=3Gk0uc8AAAAJ&hl=en"> <img src="images/scholar-light.png" height="30px" /></a>
+                </div>
+    </div>
+
 <div id="headpane">
-	
+	<br/><br/>
     <div id="pagetitle">
         <div id="headerimg"><img src="images/headshotnew.jpg" width="150px"><!--img src="images/me.png" width="150px" /--></div>
         <div id="name"><p class="myname">Kira Goldner</p>
@@ -36,19 +50,7 @@
         <p class="email"><b>Email:</b> kgoldner [at] cs [dot] columbia [dot] edu</p></div>
     </div>
     
-    <div class="nav">
-    <!--hr class="bar" /-->
-            <table>
-            <tr>
-                <td><a href="#publications">Publications</a></td>
-                <td> <a href="cv.pdf" target="_blank">CV</a></td>
-                <td><a href="#resources">Resources</a></td>
-                <td><button class="colormode darktoggle" onclick="swapStyleSheet()">Dark/Light</button></td>
-            </tr>
-        </table>
-        <!--hr class="bar" /-->
-    </div>
-    <br/>
+
     
 </div>
     
@@ -58,14 +60,6 @@
     <h1>About me</h1>
     <hr class="head" />
         <p>I am a postdoc in Computer Science at Columbia University hosted by <a href="http://timroughgarden.org/">Tim Roughgarden</a>.  Specifically, I am an <a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=5301"><b>NSF Mathematical Sciences</b></a> Postdoctoral Research Fellow and a <a href="https://datascience.columbia.edu/post-doctoral-fellows-program"><b>Data Science Institute</b></a> Postdoctoral Fellow.  <br/><br/>
-    
-
-            <!--My research interests are primarily in algorithmic mechanism design and approximation algorithms, particularly
-            in:
-            <ul class="interests"><li>mechanism design for social good&mdash;especially in healthcare, climate change, privacy, and online labor markets.</li>
-            <li>revenue maximization and analysis, particularly "interdimensional" settings that lie between single-dimensional and fully heterogeneous.</li>
-            <li>other mechanism design objectives, such as gains from trade and residual surplus.</li>
-            <li>non-traditional behavioral or informational assumptions, such as interdependent, risk-averse, prior-independent, etc.</li></ul>-->
             
             My research interests are primarily in algorithmic mechanism design and approximation algorithms, including:
             <ul class="interests" style="margin-bottom:0%;">
@@ -82,7 +76,7 @@
             at <a href="http://www.bsmath.hu/" target="_blank">Budapest Semesters in Mathematics</a>.  My Curriculum Vitae
             can be found <a href="cv.pdf" target="_blank">here</a>.<br /><br />
             
-             <span class="news attn">News:</span>
+             <span class="news">News:</span>
             <ul>
               <li><b>July 14th 12:50pm EDT:</b> My talk for ACM EC paper <a href="https://arxiv.org/pdf/2002.06329.pdf" target="_blank">Optimal Mechanism Design for Single-Minded Agents</a>.   Followed by poster session at 1:30pm EDT.<br/>(<a href="https://ec20.sigecom.org/participation/registration/">Registration</a> 	&#36;5 for students, 	&#36;10 otherwise with <a href="https://www.acm.org/special-interest-groups/sigs/sigecom">SIGecom membership</a>.)<br/><br/></li>
               <li><b>August 17-18th: </b>The <a href="http://www.md4sg.com/workshop/MD4SG20/index.html">4th Workshop</a> on Mechanism Design for Social Good (MD4SG).</li><br/>
@@ -100,99 +94,14 @@
             </ul>
             <br/>
         </p>
-        <a id="resources"></a>
-    <h1>Resources</h1>
-    <hr class="head" />        
-    
-        <p><b>Mechanism Design for Social Good (MD4SG):</b>
-    <ul>
-        <li>Tutorial on open problems [ <a href="https://www.youtube.com/watch?v=O85LGqm_dwU" target="_blank">video</a> | <a href="WINE%20Social%20Good%20Tutorial.pdf" target="_blank">slides</a> ] (at WINE 2017, Bangalore, India.) </li>  
-        <li>Article on directions of interest to those in AI [ <a href="https://arxiv.org/abs/1810.09832" target="_blank">arXiv</a> ] (with <a href="http://www.cs.cornell.edu/~red/" target="_blank">Rediet Abebe</a>.) </li>
-    <li>Original Research Group: reading list and copious notes on potential research directions [ <a href="http://md4sg.com/researchgroup/index.html" target="_blank">website</a> ] (Co-organized with <a href="http://www.cs.cornell.edu/~red/" target="_blank">Rediet Abebe</a>.) </li>
-    <li> Many many more resources available on the <a href="http://md4sg.com/" target="_blank">MD4SG website</a>.</li>
-    </ul>
-    </p>
-    
-    <p><b>Menu Complexity:</b>
-    <ul>
-    <li> Tutorial on menu complexity of multi-item and interdimensional auctions [ <a href="https://www.youtube.com/watch?v=08B6H42bglw" target="_blank">part I video</a> | <a href="https://youtu.be/08B6H42bglw?t=6740" target="_blank">part II video</a> | <a href="http://yannai.gonch.name/scientific/ec18-menu-size-tutorial/tutorial-yannai-menu-size-multi-item-auctions.pdf" target="_blank">part I slides</a> | <a href="EC-Menu-Complexity-Space-Between-Tutorial.pdf" target="_blank">part II slides</a> | <a href="http://yannai.gonch.name/scientific/ec18-menu-size-tutorial/" target="_blank">website</a> ] (at EC 2018, Ithaca, NY.  Co-organized with <a href="http://yannai.gonch.name/scientific/" target="_blank">Yannai Gonczarowski</a>.)</li>   
-    <!-- my time: (at 1:52:20) -->
-    </ul>
-    <br/>
-    </p>    
-    
-    <a id="publications"></a>
-    <h1>Publications </h1>
-    <hr class="head" />
-
-        <p><b>Optimal Mechanism Design for Single-Minded Agents</b> <br />
-            &nbsp;&nbsp; With Nikhil R. Devanur, Raghuvansh R. Saxena, Ariel Schvartzman, and S. Matthew Weinberg, EC 2020. [ <a href="https://arxiv.org/pdf/2002.06329.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=PflqwkyuorU" target="_blank">talk</a> ]
-
-        <br /><br /><b>Reducing Inefficiency in Carbon Auctions with Imperfect Competition</b> <br />
-            &nbsp;&nbsp; With Nicole Immorlica and Brendan Lucier, ITCS 2020. [ <a href="papers/carbonauctions.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=DHKRgYQw0rg" target="_blank">talk</a> ] <br />
-            &nbsp;&nbsp; also appeared in Tackling Climate Change with Machine Learning at NeurIPS 2019.
-
-        <br /><br /><p><b>Bulow-Klemperer-Style Results for Welfare Maximization in Two-Sided Markets</b> <br />
-            &nbsp;&nbsp; With Moshe Babaioff and Yannai A. Gonczarowski, SODA 2020. [ <a href="https://arxiv.org/pdf/1903.06696.pdf" target="_blank">paper</a> ]
-
-        <br /><br /><b>Mechanism Design for a Complex World: Rethinking Standard Assumptions</b> <br /> 
-	    &nbsp;&nbsp; PhD Thesis, University of Washington, June 2019. [ <a href="thesis.pdf" target="_blank">thesis</a> ]         
-        
-        <br /><br /><b>Combinatorial Auctions with Interdependent Valuations: SOS to the Rescue</b> <br />
-            &nbsp;&nbsp; With Alon Eden, Michal Feldman, Amos Fiat, and Anna R. Karlin, EC 2019. [ <a href="https://arxiv.org/pdf/1903.08384.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=Suv7H4rIAq8" target="_blank">co-author talk</a> ] <br/>
-            &nbsp;&nbsp; <span class="attn">Awarded Best Paper with Student Lead Authors</span>
-            
-        
-        <br /><br /><b>Simple and Approximately Optimal Pricing for Proportional Complementarities</b> <br />
-            &nbsp;&nbsp; With Yang Cai, Nikhil R. Devanur, and R. Preston McAfee, EC 2019. [ <a href="https://arxiv.org/pdf/1909.00788.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=5r9AYN-_I9I" target="_blank">talk</a> ] <br/>
-            &nbsp;&nbsp; Journal version accepted with revisions to Operations Research.
-            
-         <br /><br /><b>When to Limit Market Entry under Mandatory Purchase</b> <br />
-            &nbsp;&nbsp; With Meryem Essaidi and S. Matthew Weinberg, MD4SG 2019. [ <a href="https://arxiv.org/pdf/2002.06326.pdf" target="_blank">paper</a> ]            
-        
-        <br /><br /><b>Mechanism Design for Social Good</b> <br /> 
-	    &nbsp;&nbsp; With Rediet Abebe,  ACM SIGAI AI Matters, 4.3, October 2018. [ <a href="http://sigai.acm.org/static/aimatters/4-3/AIMatters-4-3-10-Abebe.pdf" target="_blank">paper</a> ]
-	    
-	    <br /><br /><b>Interdependent Values without Single-Crossing</b> <br />
-            &nbsp;&nbsp; With Alon Eden, Michal Feldman, and Amos Fiat, EC 2018. [ <a href="https://arxiv.org/pdf/1806.03865.pdf" target="_blank">paper</a> ]
-            
-            <br /><br /><b>Revenue Maximization with an Uncertainty-Averse Buyer</b> <br />
-            &nbsp;&nbsp; With Shuchi Chawla, J. Benjamin Miller, and Emmanouil Pountourakis, SODA 2018. [ <a href="https://arxiv.org/pdf/1703.08607.pdf" target="_blank">paper</a> ]            
-            
-            <!--br /><br /><b>A Report on the Workshop on Mechanism Design for Social Good</b> <br /> 
-	    &nbsp;&nbsp; With Rediet Abebe,  ACM SIGecom Exchanges, 16.2, June 2018. [ <a href="http://www.sigecom.org/exchanges/volume_16/2/ABEBE.pdf" target="_blank">paper</a> ]-->
-            
-            <br /><br /><b>A Prior-Independent Revenue-Maximizing Auction for Multiple Additive Bidders</b> <br />
-            &nbsp;&nbsp; With Anna R. Karlin, WINE 2016. [ <a href="papers/additivepriorindependent.pdf" target="_blank">paper</a> ]
-            
-            <br /><br /><b>The FedEx Problem</b> (Working Paper) <br />
-            &nbsp;&nbsp; With Amos Fiat, Anna R. Karlin, and Elias Koutsoupias, EC 2016. [ <a href="papers/fedex.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=ROF9g9ng1BY" target="_blank">talk</a> ]
-
-            <br /><br /><b>Minimal Partial Languages and Automata</b> <br />
-            &nbsp;&nbsp; With F. Blanchet-Sadri and Aidan Shackleton, CIAA 2014. [ <a href="http://www.uncg.edu/cmp/research/planguages2/CIAA2014_Blanchet-Sadri_Goldner_Shackleton.pdf" target="_blank">paper</a> ] <br/>
-            &nbsp;&nbsp; Journal version in RAIRO-Theoretical Informatics and Applications, 2017.
-
-        <!--br /><br /><b>Different Optimal Solutions in Shared Path Graphs</b> <br />
-        &nbsp;&nbsp; With Sean McCulloch, MCURCSM 2012. [ <a href="papers/sharedpathgraphs.pdf" target="_blank">paper</a> ]-->
-
-            <br /><br />
-
-            You can also view my papers from <a href="http://scholar.google.com/citations?user=3Gk0uc8AAAAJ" target="_blank">Google Scholar</a>.<br /><br /></p>
-
-
-        <h1>Teaching</h1>
-    <hr class="head" />
-        <ul><li>CSE 521p: <a href="http://courses.cs.washington.edu/courses/csep521/15sp/" target="_blank">Applied Algorithms (Professional Masters Program)</a>, Spring 2015 under Anna Karlin at UW</li>
-            <li>CSE 312: <a href="http://courses.cs.washington.edu/courses/cse312/14au/" target="_blank">Foundations of Computing II</a>, Autumn 2014 under Anna Karlin at UW</li>
-            <li>CSCI 383: <a href="https://www.cs.oberlin.edu/~asharp/cs383/" target="_blank">Theory of Computation</a>, Spring 2014 under Tom Wexler at Oberlin</li>
-            <li>CSCI 150: <a href="http://cs.oberlin.edu/~ctaylor/150/" target="_blank">Introduction to Computer Science I</a>, Spring 2012, Spring 2013 under Tom Wexler at Oberlin</li>
-            </ul>
-
+ 
     <br /><br /><br /><br /></div></div>
 
     
     <div id="footer"> Created by Kira Goldner | Updated July 2020
         <br /></div>
+        
+       <div class="lightdark"><button class="colormode darktoggle" onclick="swapStyleSheet()"></button></div>
 
   </body>
 
