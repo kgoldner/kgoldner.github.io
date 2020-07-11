@@ -45,7 +45,7 @@ div#contentpane {
     /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
     font-size:120%;
     width:auto;
-    width: 75%; /*can change to 1000, or min-width: 910px;    950px is prev*/
+    width: 85%; /*can change to 1000, or min-width: 910px;    950px is prev*/
     background-color: #FFFFFF;
     /*border-width:4pt;*/
     /*border-style:solid;*/
@@ -453,23 +453,16 @@ table ol {
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 120%;
+    font-size: 140%;
     position: fixed;
     z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
 }
 
-.nav table {
-    border: none;
-    height: 30px;
-}
-
-.nav td {
-    border: none;
-    padding: 0px 30px;
-}
-
-.nav tr, .nav th {
-    border: none;
+.nav div {
+    padding: 0px 5px;
 }
 
 .nav a {
@@ -478,6 +471,27 @@ table ol {
 
 .nav a:hover {
     color: #FFCC00;
+}
+
+.links {
+    /*min-width: 110px;*/
+}
+
+.headname {
+    font-family: 'Titillium Web', Optima, Verdana, sans-serif;
+    color: #FFCC00;
+    font-weight: bold;
+    font-size: 170%;
+    /*min-width: 200px;*/
+}
+
+.navbar {
+    margin: 0px auto;
+}
+
+.on {
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 .darktoggle {
@@ -492,25 +506,4 @@ table ol {
 
 .darktoggle:hover {
     color: #FFCC00;
-}
-
-.links {
-    /*min-width: 110px;*/
-}
-
-.headname {
-    font-family: 'Titillium Web', Optima, Verdana, sans-serif;
-    color: #FFCC00;
-    font-weight: bold;
-    font-size: 190%;
-    /*min-width: 200px;*/
-}
-
-.navbar {
-    margin: 0px auto;
-}
-
-.on {
-    font-weight: bold;
-    color: #FFFFFF;
 }
