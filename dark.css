@@ -39,7 +39,7 @@ div#contentpane {
     margin-top: -10px;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom: -1%;
+    padding-bottom: 50px;
     color: #DDDDDD;
     font-family: 'Titillium Web', Arial, sans-serif;
     /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
@@ -53,7 +53,7 @@ div#contentpane {
     /*border-color: #002668;*/
     clear: both;
     line-height: 150%;
-
+    z-index: 1;
 }
 
 .news {
@@ -142,6 +142,10 @@ p {
     margin: 0;
 }
 
+#content p {
+    margin-bottom: 1em;
+}
+
 h1{
     color: #DDDDDD;     /*purple #5b198f       yellow #FFCC00       green #2d9e78   blue 3d50bb*/
     font-family: 'Titillium Web', sans-serif;
@@ -194,14 +198,31 @@ h2{
 #footer {
     margin: 30px 0px;
     text-align: center;
-    position: relative;
+    position: fixed;
+    bottom: 0px;
+    z-index: 0;
     font-family: 'Titillium Web', Arial, sans-serif;
-    top: 0px;
     font-size:115%;
     float: left;
     width: 100%;
     color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
 }
+
+#empty {
+    width: 100%;
+    height: 70px;
+    z-index: 0;
+}
+
+#buffer {
+    width: 100%;
+    height: 140px;
+    z-index: 0;
+}
+
 #footer .side, #footer .middle {
         display: inline-block;
         vertical-align: middle;
@@ -383,7 +404,6 @@ a {
     /*color: #2d9e78;*/
     color: #3dae88;
     text-decoration: none;
-    font-weight: normal;
 }
 /*a:visited {
     color: #C5BAD5;
@@ -462,6 +482,7 @@ table ol {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 58px;    
 }
 
 .nav div {
@@ -519,4 +540,10 @@ table ol {
     right: 37px;
     top: 88px;
     z-index: 2;
+}
+
+#logo {
+    height: 19pt;
+    margin-right: 5px;
+    margin-left: 5px;
 }
