@@ -88,10 +88,11 @@ div#pagetitle{
     font-size: 333%;
     margin-bottom: -5%;
     text-align: center;
+    margin-top: -3%;    
 }
 
 .phd {
-    font-size: 80%;
+    font-size: 90%;
     text-align: center;
     color: #DDDDDD;
 }
