@@ -1,0 +1,12 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<channel>
+<title> The Strategy Space </title>
+<description>Feed created by FiveFilters.org</description>
+<link>https://www.kiragoldner.com/blog/index.html</link>
+<generator>Feed Creator</generator>
+<atom:link rel="self" href="http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.kiragoldner.com%2Fblog%2Findex.html&in_id_or_class=post-name&max=5&order=document&guid=0"/>
+<atom:link rel="related" title="Edit feed with Feed Creator" href="http://createfeed.fivefilters.org/index.php?url=https%3A%2F%2Fwww.kiragoldner.com%2Fblog%2Findex.html&in_id_or_class=post-name&max=5&order=document&guid=0"/>
+...
+</channel>
+...
+</rss>
