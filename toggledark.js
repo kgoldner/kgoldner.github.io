@@ -12,10 +12,10 @@ window.onload = _ =>
  
 function swapStyleSheet(){
     var href = document.getElementById('theme').getAttribute('href');
-    var new_href = 'update.css';
+    var new_href = 'dark.css';
 
-    if (href == 'update.css') {
-        new_href = 'dark.css';
+    if (href == 'dark.css') {
+        new_href = 'update.css';
     }
 
     document.getElementById('theme').setAttribute('href', new_href);
@@ -23,5 +23,5 @@ function swapStyleSheet(){
 }
 
 /*window.onload = _ =>
-    let href = localStorage.getItem("sheet") || "update.css";
+    let href = localStorage.getItem("sheet") || "dark.css";
     document.getElementById('theme').setAttribute('href', href);*/

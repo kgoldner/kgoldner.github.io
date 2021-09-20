@@ -1,5 +1,5 @@
 body {
-    background-color: #404040;
+    background-color: #121212;
     -webkit-animation-delay: 0.1s;
     -webkit-animation-name: fontfix;
     -webkit-animation-duration: 0.1s;
@@ -47,7 +47,7 @@ div#contentpane {
     font-size: 120%;
     width:auto;
     width: 85%; /*can change to 1000, or min-width: 910px;    950px is prev*/
-    background-color: #404040;
+    background-color: #121212;
     /*border-width:4pt;*/
     /*border-style:solid;*/
     /*border-color: #002668;*/
@@ -391,7 +391,7 @@ span.project2 {
 #headerimg {
     margin-right: 30px;
     /*border: 2px solid #FFCC00;*/
-    border: 2px solid #404040;
+    border: 2px solid #121212;
     width: 150px;
     height: 180px;
     display: inline-block;
