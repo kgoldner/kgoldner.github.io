@@ -18,7 +18,7 @@ div#headpane {
     margin-left:auto;
     margin-right:auto;
     margin-top:40px;
-    color: #FFCC00; /*purple #5b198f       yellow #FFCC00       green #2d9e78*/
+    color: #F2B303; /*purple #5b198f       yellow #F2B303       green #2d9e78*/
     /*font-family:Optima, Verdana, sans-serif;*/
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -40,7 +40,7 @@ div#contentpane {
     margin-left:auto;
     margin-right:auto;
     padding-bottom: 50px;
-    color: #DDDDDD;
+    color: #f1e4de;
     font-family: 'Titillium Web', Arial, sans-serif;
     /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
     /*font-size:100%;*/
@@ -65,7 +65,7 @@ div#contentpane {
 .attn {
     font-weight: bold;
     /*color: #cc1414;*/
-    color: #ec3434;
+    color: #de2f2f;
 }
 
 
@@ -94,7 +94,7 @@ div#pagetitle{
 .job {
     font-size: 90%;
     text-align: center;
-    color: #DDDDDD;
+    color: #f1e4de;
     line-height: 100%;
     margin-top: 1%;
     margin-bottom: 2%;    
@@ -151,27 +151,27 @@ p {
 }
 
 h1{
-    color: #DDDDDD;     /*purple #5b198f       yellow #FFCC00       green #2d9e78   blue 3d50bb*/
+    color: #f1e4de;     /*purple #5b198f       yellow #F2B303       green #2d9e78   blue 3d50bb*/
     font-family: 'Titillium Web', sans-serif;
     margin: 0% 0% 1% 0%;
 }
 
 h1 > a{
-    color: #DDDDDD;
+    color: #f1e4de;
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
     font-weight: bold;
 }
 
 h1>a:hover {
-    color: #DDDDDD;
+    color: #f1e4de;
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
     font-weight: bold;
 }
 
 h2{
-    color: #DDDDDD;
+    color: #f1e4de;
     font-family: 'Titillium Web', sans-serif;
     margin: -1% 0%;
     font-size: 180%;
@@ -179,24 +179,24 @@ h2{
 
 .head{
     height: 3px;
-    border: #DDDDDD;    
-    background-color: #DDDDDD;  /*gray #7f7f7f;*/
+    border: #f1e4de;    
+    background-color: #f1e4de;  /*gray #7f7f7f;*/
     margin-bottom: 20px;
 }
 
 .bar{
     height: 1px;
-    border: #DDDDDD;    
-    background-color: #DDDDDD;  /*gray #7f7f7f;*/
+    border: #f1e4de;    
+    background-color: #f1e4de;  /*gray #7f7f7f;*/
     margin-bottom: 20px;
 }
 
 .projectTitle {
     height: 5px;
-    color: #FFCC00;
-    background-color: #FFCC00;
+    color: #F2B303;
+    background-color: #F2B303;
     margin-bottom: 20px;
-    border: 1px solid #FFCC00;
+    border: 1px solid #F2B303;
 }
 
 #footer {
@@ -209,7 +209,7 @@ h2{
     font-size:115%;
     float: left;
     width: 100%;
-    color: #DDDDDD;
+    color: #f1e4de;
     display: flex;
     justify-content: center;
     align-items: flex-end;    
@@ -253,7 +253,7 @@ h2{
 }*/
 
 #footer a:hover, #contentpane a:hover {
-    color: #FFCC00;
+    color: #F2B303;
 }
 
 hr {
@@ -271,7 +271,7 @@ hr {
     font-size: 75%;
     font-family: 'Titillium Web', Arial, sans-serif;
     background-color: #000000;
-    color: #DDDDDD;
+    color: #f1e4de;
     line-height: 95%;
 }
 
@@ -289,7 +289,7 @@ span.left2 {
     font-weight: bold;
     font-family: 'Titillium Web', Arial, sans-serif;
     background-color: #000000;
-    color: #FFCC00;
+    color: #F2B303;
     padding: 5px;
 }
 
@@ -301,7 +301,7 @@ span.project2 {
 
 .title {
     background-color: #000000;
-    color: #DDDDDD;
+    color: #f1e4de;
     /*padding: 12px 12px 20px 12px;*/
     padding: 5px 5px;
     margin-bottom: 15px;
@@ -314,7 +314,7 @@ span.project2 {
 }
 
 .link {
-    color: #FFCC00;
+    color: #F2B303;
     /*float: right;*/
     text-align: center;
     /*margin-top: 10px;*/
@@ -334,7 +334,7 @@ span.project2 {
 }
 .link a:hover{
 	/*text-decoration:underline;*/
-	color: #FFCC00;
+	color: #F2B303;
 }
 
 .right {
@@ -390,7 +390,7 @@ span.project2 {
 
 #headerimg {
     margin-right: 30px;
-    /*border: 2px solid #FFCC00;*/
+    /*border: 2px solid #F2B303;*/
     border: 2px solid #121212;
     width: 150px;
     height: 180px;
@@ -406,7 +406,7 @@ span.project2 {
 }
 a {
     /*color: #2d9e78;*/
-    color: #3dae88;
+    color: #0b7fab;
     text-decoration: none;
 }
 /*a:visited {
@@ -415,11 +415,11 @@ a {
 }*/
 
 a:hover {
-    color: #FFCC00;
+    color: #F2B303;
 }
 
 a.pdf {
-    color: #FFCC00;
+    color: #F2B303;
     text-decoration: none;
 }
 a.pdf:hover {
@@ -428,7 +428,7 @@ a.pdf:hover {
 
 .email {
     font-family: 'Roboto', sans-serif;
-    color: #DDDDDD;
+    color: #f1e4de;
     font-size: 65%;
     font-weight: normal;
     text-align: left;
@@ -483,7 +483,7 @@ table ol {
     width: 100%;
     background-color: #222222; 
     border-color: #222222;
-    color: #DDDDDD;
+    color: #f1e4de;
     margin-top: -40px;
     margin-left: -8px;
     margin-bottom: 20px;
@@ -503,11 +503,11 @@ table ol {
 }
 
 .nav a {
-    color: #DDDDDD;
+    color: #f1e4de;
 }
 
 .nav a:hover {
-    color: #FFCC00;
+    color: #F2B303;
 }
 
 .links {
@@ -516,7 +516,7 @@ table ol {
 
 .headname {
     font-family: 'Titillium Web', Optima, Verdana, sans-serif;
-    color: #FFCC00;
+    color: #F2B303;
     font-weight: bold;
     font-size: 170%;
     /*min-width: 200px;*/
@@ -528,11 +528,11 @@ table ol {
 
 .on {
     font-weight: bold;
-    color: #FFFFFF;
+    color: #f1e4de;
 }
 
 .darktoggle {
-    color: #DDDDDD;
+    color: #f1e4de;
     /*background-color: #222222;*/
     border-color: #222222;
     border: none;
@@ -545,7 +545,7 @@ table ol {
 }
 
 .darktoggle:hover {
-    color: #FFCC00;
+    color: #F2B303;
 }
 
 .lightdark {
