@@ -79,7 +79,7 @@ div#pagetitle{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3%; /*previously 4*/
-    width: 725px;
+    width: 770px;
 
 }
 
@@ -391,8 +391,8 @@ span.project2 {
     margin-right: 30px;
     /*border: 2px solid #F2B303;*/
     border: 2px solid #f2ece9;
-    width: 150px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
     margin-bottom: 10px;
     /*margin-left: 40px;*/
