@@ -1,0 +1,170 @@
+.timeline {margin-top: 30px; padding-left: 0;}
+.timeline > li { padding-left: 50px; position:relative; margin-left: -50px;
+  border-left: 2px dashed whitesmoke; padding-bottom: 30px;}
+.timeline > li:last-child {padding-bottom: 10px; margin-bottom: 30px;}
+.timeline > li > .itemlabel {
+  font-size: 0.7em;
+  color: #777;
+  font-family: 'Source Sans Pro';
+}
+.timeline > li > .itemlabel > span {
+  padding-top: 6px;  
+  background: white;
+  width: auto;
+  margin-right: 27px
+}
+#content .timeline a {font-weight: normal; font-family: inherit;}
+.list > p:first-child {
+  margin-top: 0;
+}
+p { margin-bottom: 0.5em }
+.continue {
+  //margin-top: 0;
+}
+.theorem-title {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+}
+.theorem-title::before {
+  content: "#";
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 0;
+  margin-left: -10px;
+  padding-right: 10px;
+}
+
+.theorem-title + p {
+  margin-top: 0;
+}
+.theorem {
+  margin: 20px 0;
+}
+#content {text-align: justify;hyphens: auto;}
+.title {
+  font-size: 1.8em;
+  text-align: left;
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+}
+.author { color: #777;
+  text-align:left;}
+.date { color: #777;
+  text-align:left;}
+.list {
+  text-align: justify;
+  hyphens: auto;
+}
+.list.center {
+  text-align: center ;
+}
+.raggedleft, .list.flushright {
+  text-align: right;
+}
+.list.flushleft {
+  text-align: left;
+}
+
+.quote, .verse {
+  margin-left: 40px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.itemlabel + p {
+  display: inline;
+}
+.itemlabel {
+  position: relative;
+}
+
+.itemlabel > * {
+  right: 6px;
+  position: absolute;
+  white-space: nowrap;
+}
+code {    font-family: KaTeX_Typewriter;}
+.hbox {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.clap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.llap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 0;
+}
+.rlap {
+    display: inline-block;
+}
+.phantom {
+    visibility: hidden;
+}
+.frame { border: 1px solid; padding: 3px; }
+
+a {color: #000;}
+a:hover {color: inherit;}
+
+.bf { font-weight: bold; font-family: 'Source Sans Pro';}
+.it { font-style: italic; }
+.sf { font-family: 'Source Sans Pro';}
+.sl { font-style: oblique; font-variant-caps: normal;}
+.sc { font-family: 'Source Sans Pro'; font-variant-caps: small-caps;}
+.LARGE {
+    font-size: 1.7rem;
+}
+.Large {
+    font-size: 1.4rem;
+}
+.large {
+    font-size: 1.2rem;
+}
+.Huge {
+    font-size: 2.5rem;
+}
+.huge {
+    font-size: 2rem;
+}
+.tiny {
+    font-size: .5rem;
+}
+.small {
+    font-size: .91rem;
+}
+.Small {
+    font-size: .85rem;
+}
+
+summary  {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  margin-left: -24px;
+  background: white;
+}
+summary + p {
+  margin-top: 0;
+}
+details {
+    border-left: 4px solid #ddd;
+    padding-left: 15px;
+    margin-left: -15px;
+    position: relative;
+}
+details:after {
+    content: " \220e";
+    right: 20px;
+    position: absolute;
+    bottom: 2px;
+    font-size: 20px;
+}

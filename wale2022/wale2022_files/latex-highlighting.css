@@ -1,0 +1,59 @@
+.mrel {
+	color: #a67f59;
+}
+
+.mord.text {
+  color: black;
+}
+
+.mathrm, .mathtt {
+	color: #905;
+}
+.mathit {
+  color: chocolate;
+}
+.text > .mathrm {
+  color: inherit;
+}
+.paper .latexcode p {
+  text-align: left;
+}
+strong {
+  font-family: KaTeX_SansSerif;
+}
+.latexcode strong, .mathbf {
+  font-family: KaTeX_Normal;
+  font-weight: normal !important;
+  color: #07a;
+}
+.mathsf {
+  color: navy;
+}
+.latexcode em, .latexcode em span.base > *, .latexcode .textit {
+	color: #690 !important;
+}
+
+.latexcode blockquote {
+  margin: 0;
+  padding: 6px 15px;
+  margin-left: 3px;    
+  border-left: 4px solid #ddd;
+}
+.latexcode blockquote:hover {
+  border-color: #999;
+}
+.latexcode p+blockquote {margin-top:-17px;}
+.latexcode blockquote > p+blockquote {margin-top:0;}
+
+.latexcode blockquote blockquote{
+  padding: 0 15px;
+  border: none;
+}
+.latexcode blockquote p {margin:0}
+
+.latexcode {
+  display: block;
+  background: #fafafc;
+  margin: 20px 0;
+  box-shadow: 50px 10px 0 #fafafc, 50px -10px 0 #fafafc, -50px 10px 0 #fafafc, -50px -10px 0 #fafafc;
+}
