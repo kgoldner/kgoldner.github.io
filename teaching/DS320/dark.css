@@ -539,7 +539,7 @@ table ol {
     font-family: 'Roboto', sans-serif;
     font-size: medium;
     font-size: 100%;
-    background: url("../images/light-dark.png") no-repeat center center;
+    background: url("../../images/light-dark.png") no-repeat center center;
     width: 50px;
     height: 50px;
 }
