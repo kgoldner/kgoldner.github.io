@@ -80,7 +80,7 @@ div#pagetitle{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3%; /*previously 4*/
-    width: 770px;
+    width: 780px;
 
 }
 
@@ -401,7 +401,7 @@ span.project2 {
 
 #name {
     display: inline-block;
-    width: 525px;
+    width: 535px;
     vertical-align: top;
 }
 a {
