@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    
+<!--HEAD-->
+<head>
+
+    <title>Algorithms &amp; Theory at Boston University</title>
+    
+    <!--open links in new tab-->
+    <!-- <base target="_blank"> -->
+
+    <!--JS-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>	
+    <script src="js/cal.js"></script>	
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="bootstrap.min.css">	
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<!--BODY-->
+<body>
+    
+    <h1 class="title">Algorithms &amp; Theory at <a href="https://www.bu.edu/">Boston University</a></h1>
+
+    <div id="left">
+        
+        <div id="welcome-blurb">
+		
+		<p> Welcome to the Theoretical Computer Science (TCS) research group. Research in TCS (and in our group) encompasses diverse areas such as theory of computation, complexity, sublinear algorithms, optimization, distributed and parallel computing, data privacy, machine learning and more. The common theme behind the TCS approach to these research directions is a focus on precise models and rigorous mathematical analysis.
+		</p>
+
+        <p>We hold a weekly <a href="https://www.bu.edu/cs/algorithms-and-theory-seminar/">Theory Seminar</a>.  For Fall 2022, we meet Mondays from 1:30-2:30pm simultaneously in person and over Zoom.  For other events and general announcements, you can subscribe to the TCS mailing list <a href="http://cs-mailman.bu.edu/mailman/listinfo/tcs-announce">here</a>.</p>
+		
+		<p> If you are interested in joining the TCS research group, potential PhD students should apply either to the <a href="https://www.bu.edu/cs/phd-program/">Department of Computer Science</a> or the <a href="https://www.bu.edu/cds-faculty/programs-admissions/phd-degree/">Faculty of Computing &amp; Data Sciences</a> PhD programs, depending on their interests and intended faculty advisors.  Inquiries about postdoc positions should be directed to faculty directly.
+		</p>
+
+        </div>
+        
+        <div id="people">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Faculty')" id="default"><h2>Faculty</h2></button>
+                <button class="tablinks" onclick="openTab(event, 'Postdocs')"><h2>Postdocs</h2></button>
+                <button class="tablinks" onclick="openTab(event, 'Students')" id="default"><h2>Students</h2></button>
+                <button class="tablinks" onclick="openTab(event, 'Visitors')"><h2>Visitors</h2></button>
+            </div>
+
+            <!-- Faculty -->
+            <div id="Faculty" class="tabcontent">
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/markbun.png">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/mbun/">Mark Bun</a></div>
+                        <div class="img-interests">Data Privacy, Computational Complexity, Cryptography, Machine Learning Theory</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/alinaene.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/aene/">Alina Ene</a></div>
+                        <div class="img-interests">Optimization, Algorithms, 
+                            Machine Learning Theory</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/petergacs.jpeg">
+                        <div class="img-name"><a href="https://cs-web.bu.edu/faculty/gacs/">Peter Gacs</a></div>
+                        <div class="img-interests">Algorithmic Information Theory,
+Computational Complexity, Quantum Information Theory</div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/kiragoldner.jpeg">
+                        <div class="img-name"><a href="https://www.kiragoldner.com/">Kira Goldner</a></div>
+                        <div class="img-interests">Algorithmic Mechanism Design &amp; Game Theory, Algorithms, Microeconomics</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/stevehomer.jpeg">
+                        <div class="img-name"><a href="https://www.bu.edu/cs/profiles/homer/">Steve Homer</a></div>
+                        <div class="img-interests">Algorithms</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/leonidlevin.jpeg">
+                        <div class="img-name"><a href="https://www.bu.edu/cs/profiles/leonid-levin/">Leonid Levin</a></div>
+                        <div class="img-interests">Computational Complexity</div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/krzysztofonak.jpeg">
+                        <div class="img-name"><a href="https://onak.pl/">Krzysztof Onak</a></div>
+                        <div class="img-interests">Algorithms for Big Data, Sublinear Algorithms, Streaming</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/sofya.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/sofya/">Sofya Raskhodnikova</a></div>
+                        <div class="img-interests">Sublinear Algorithms, Property Testing, Private Data Analysis</div>
+                    </div>
+
+
+                    <div class="img-container">
+                        <img src="images/headshots/adamsmith.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/ads22/">Adam Smith</a></div>
+                        <div class="img-interests">Data Privacy, Cryptography, Information Theory, Machine Learning, Quantum computing</div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/rancanetti.jpeg">
+                        <div class="img-name"><a href="https://www.bu.edu/cs/profiles/ran-canetti/">Ran Canetti</a></div>
+                        <div class="img-interests">Cryptography, Network and System Security, Cybersecurity and Law</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/marcogaboardi.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/gaboardi/">Marco Gaboardi</a></div>
+                        <div class="img-interests">Differential Privacy, Programming Languages, Formal Methods</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/leonidreyzin.jpeg">
+                        <div class="img-name"><a href="https://www.cs.bu.edu/~reyzin/">Leonid Reyzin</a></div>
+                        <div class="img-interests">Cryptography</div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/gabe.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/kaptchuk/">Gabriel Kaptchuk</a></div>
+                        <div class="img-interests">Data Privacy</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Postdocs -->
+            <div id="Postdocs" class="tabcontent">
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/maryam.jpeg">
+                        <div class="img-name"><a href="http://www.mit.edu/~maryama/">Maryam Aliakbarpour</a></div>
+                        <div class="img-interests">Statistical Learning Theory, Property Testing, Differential Privacy, Sublinear Algorithms</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/marcel.jpeg">
+                        <div class="img-name"><a href="https://www.marcel-neunhoeffer.com/">Marcel Neunhoeffer</a></div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Students -->
+            <div id="Students" class="tabcontent">
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/nicolas.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/nhaddad/">Nicolas Alhaddad</a></div>
+                        <div class="img-interests">Advisor: Mayank</div>
+                    </div> 
+                    
+                    <div class="img-container">
+                        <img src="images/headshots/gavin.png">
+                        <div class="img-name"><a href="http://cs-people.bu.edu/grbrown/">Gavin Brown</a></div>
+                        <div class="img-interests">Advisor: Adam</div>
+                    </div>     
+                    
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a>Megan Chen</a></div>
+                        <div class="img-interests">Advisor: Ran</div>
+                    </div>                           
+                    
+                    <div class="img-container">
+                        <img src="images/headshots/nathan.png">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/ndang/">Nathan Dang</a></div>
+                        <div class="img-interests">Advisor: Steve</div>
+                    </div>                               
+
+                    <div class="img-container">
+                        <img src="images/headshots/rathin.png">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/rathin/">Rathin Desai</a></div>
+                        <div class="img-interests">Advisor: Mark</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/islam.jpeg">
+                        <div class="img-name"><a href="https://decltype.me/">Islam Faisal</a></div>
+                        <div class="img-interests">Advisor: Mark</div>
+                    </div> 
+                    
+                </div>
+
+                <div class="imgs-row">                    
+
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="">Harry Fu</a></div>
+                        <div class="img-interests">Advisor: Alina</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="http://lglinskih.com/">Luda Glinskih</a></div>
+                        <div class="img-interests">Advisor: Mark and Sofya</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="">Julie Ha</a></div>
+                        <div class="img-interests">Advisor: Mayank</div>
+                    </div> 
+                    
+                </div>
+
+                <div class="imgs-row">                    
+
+                    <div class="img-container">
+                        <img src="images/headshots/shlomi.png">
+                        <div class="img-name"><a href="https://shlomi.hod.xyz/">Shlomi Hod</a></div>
+                        <div class="img-interests">Advisor: Ran</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/tim.jpeg">
+                        <div class="img-name"><a href="http://cs-people.bu.edu/tjackman/">Tim Jackman</a></div>
+                        <div class="img-interests">Advisor: Steve Homer</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/palak.png">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/palakj/">Palak Jain</a></div>
+                        <div class="img-interests">Advisor: Adam Smith</div>
+                    </div> 
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/mandar.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/mandarj/">Mandar Juvekar</a></div>
+                        <div class="img-interests">Advisor: Adam Smith</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/ari.png">
+                        <div class="img-name"><a href="https://arikarchmer.com/">Ari Karchmer</a></div>
+                        <div class="img-interests">Advisor: Ran Canetti</div>
+                    </div> 
+            
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="">Ephraim Linder</a></div>
+                        <div class="img-interests">Advisor: Adam Smith</div>
+                    </div> 
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/ryan.jpeg">
+                        <div class="img-name"><a href="https://ryanlittle.net/">Ryan Little</a></div>
+                        <div class="img-interests">Advisor: Mayank</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="">Patrick Lutz</a></div>
+                        <div class="img-interests">Advisor: Alina</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/debanuj.jpeg">
+                        <div class="img-name"><a href="https://debanujnayak.github.io/">Debanuj Nayak</a></div>
+                        <div class="img-interests">Advisor: Sofya</div>
+                    </div> 
+                    
+                </div>
+
+                <div class="imgs-row">                    
+
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="">Duy Nguyen</a></div>
+                        <div class="img-interests">Advisor: Alina</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/luowenq/">Luowen Qian</a></div>
+                        <div class="img-interests">Advisor: Ran</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/freddy.jpeg">
+                        <div class="img-name"><a href="https://freddyreiber.info/">Freddy Reiber</a></div>
+                        <div class="img-interests">Advisor: Kira</div>
+                    </div> 
+                    
+                </div>
+
+                <div class="imgs-row">                    
+
+                    <div class="img-container">
+                        <img src="images/headshots/dragos.jpeg">
+                        <div class="img-name"><a href="https://ristache.com/">Dragos Ristache</a></div>
+                        <div class="img-interests">Advisor: Sofya</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="">Sarah Sarfaraz</a></div>
+                        <div class="img-interests">Advisor: Ran</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/pratik.jpeg">
+                        <div class="img-name"><a href="https://sites.google.com/view/pratiksarkar/welcome">Pratik Sarkar</a></div>
+                        <div class="img-interests">Advisor: Ran</div>
+                    </div> 
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/satchit.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/satchit/">Satchit Sivakumar</a></div>
+                        <div class="img-interests">Advisor: Mark and Marco</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/terrier.png">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/fspaeh/">Fabian Spaeh</a></div>
+                        <div class="img-interests">Advisor: Alina</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/bhushan.jpeg">
+                        <div class="img-name"><a href="https://bsuwal.com/">Bhushan Suwal</a></div>
+                        <div class="img-interests">Advisor: Kira</div>
+                    </div> 
+                    
+                </div>
+
+                <div class="imgs-row">                    
+
+                    <div class="img-container">
+                        <img src="images/headshots/marika.jpeg">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/marikas/">Marika Swanberg</a></div>
+                        <div class="img-interests">Advisor: Adam Smith</div>
+                    </div>              
+
+                    <div class="img-container">
+                        <img src="images/headshots/nadya.png">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/voronova/">Nadya Voronova</a></div>
+                        <div class="img-interests">Advisor: Mark</div>
+                    </div> 
+
+                    <div class="img-container">
+                        <img src="images/headshots/connor.jpeg">
+                        <div class="img-name"><a href="https://cwagaman.com/">Connor Wagaman</a></div>
+                        <div class="img-interests">Advisor: Adam and Marco</div>
+                    </div> 
+                 
+                </div> 
+                    
+                <div class="imgs-row">                    
+
+                    <div class="img-container">
+                        <img src="images/headshots/tolik.png">
+                        <div class="img-name"><a href="https://cs-people.bu.edu/tolik/">Tolik Zinovyev</a></div>
+                        <div class="img-interests">Advisor: Leo</div>
+                    </div> 
+
+                </div>
+                
+            </div>
+            
+            <!-- Visitors -->            
+            <div id="Visitors" class="tabcontent">
+                <div class="imgs-row">
+                
+                    <div class="img-container">
+                        <img src="images/headshots/rachel.jpg">
+                        <div class="img-name"><a href="https://www.kiragoldner.com/">Rachel Cummings</a></div>
+                        <div class="img-interests">Privacy, Algorithmic Game Theory, Machine Learning Theory, Fairness</div>
+                    </div>
+
+	                <div class="img-container">
+	                    <img src="images/headshots/eran-tromer.jpg">
+	                    <div class="img-name"><a href="https://cs.tau.ac.il/~tromer">Eran Tromer</a></div>
+	                    <div class="img-interests">Cryptography, Information Security, Distributed-Ledger Technology</div>
+	                </div>
+            	</div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="right">
+        
+        <!-- JS calendar -->
+        <!--div class="row mt-3">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12"-->
+        <div> 
+            <div>
+               <h2 style="display: inline">Calendar</h2> &nbsp;
+                  <span class="align-text-top">
+
+                             [ <a id="earlierEvents" role="link" class="activelink" href="#" onclick="earlierEvents()" target="_self">earlier</a> |
+                             <a id="laterEvents" role="link" class="activelink" href="#" onclick="laterEvents()" target="_self">later</a> ]
+
+                             &nbsp; [ <a class="" href="https://calendar.google.com/calendar/embed?src=hmaqnavg6bjvd84ib0qjk07hcg%40group.calendar.google.com&ctz=America%2FNew_York">google calendar</a> ]</span>
+                 <div class="row mt-3 pl-4 mb-4">
+                    <div id="sched">
+                      <div class="panel-group" id="accordionCal">
+                      </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <!-- <h2 style="display: inline;">Calendar</h2> -->
+<!-- 
+            <br>
+
+            <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Y29sdW1iaWEuZWR1XzFoaTFjYzJocmZ0NDFtNm05a204aWIxa3RjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D81B60&showTitle=0&showCalendars=0&showTabs=0&showPrint=0&showDate=0&mode=AGENDA&showTz=0" style="border-width:0" width="350" height="400" frameborder="0" scrolling="no"></iframe>
+        
+        <br> -->
+
+        <br>
+        
+        
+        <h2>News</h2>
+            <ul>
+                <li><b>Mark Bun</b> was awarded a <a href="https://sloan.org/fellowships/2022-Fellows">2022 Sloan Research Fellowship</a>.</li>
+                <li><b>Adam Smith</b> and collaborators were awarded the <a href="https://awards.acm.org/kanellakis">2021 ACM Paris Kanellakis Theory and Practice Award</a> for their work on the fundamentals of differential privacy.</li>
+            </ul>
+
+        <h2>Related Groups &amp; Events</h2>
+            <ul>
+                <li><a href="https://www.bu.edu/cs/groups/busec/">BU Security</a></li>            
+		<li><a href="https://bu.edu/law/faculty-and-staff/colloquia-workshops/cyber-alliance-speaker-series/">BU Cyber Alliance</a></li>            
+                <li><a href="https://www.bu.edu/stat/seminar/">BU Statistics and Probability Seminar</a></li>
+                <li><a href="https://bostoncryptoday.wordpress.com/">Charles River Crypto Day</a></li>
+                <li><a href="https://www2.ccs.neu.edu/theory/seminar.html">Northeastern Theory Seminar</a></li>
+                <li><a href="https://toc.seas.harvard.edu/toc-seminar">Harvard Theory of Computation Seminar</a></li>
+                <li><a href="https://toc.csail.mit.edu/node/424">MIT Theory of Computation Colloquium</a></li>
+
+	    </ul>
+        
+        <h2>Recent Graduate Courses</h2>
+            <ul>
+                <li>CS 537: <a href="https://cs-people.bu.edu/sofya/cs537/">Randomness in Computing</a> (F22)</li>
+                <li>DS 574: <a href="https://www.kiragoldner.com/teaching/DS574/index.html">Algorithmic Mechanism Design</a> (F22)</li>
+                <li>DS 657: <a href="https://cs-people.bu.edu/kaptchuk/teaching/ds457/sp22-classpage.html">Law and Algorithms</a> (S22)</li>
+                <li> CS 599: <a href="https://cs-people.bu.edu/mbun/courses/599_S22/">Mathematical Methods for Theoretical CS</a> (S22)</li>
+                <li>CS 531: <a href="https://cs-people.bu.edu/aene/cs531sp22/schedule.html">Advanced Optimization Algorithms</a> (S22)</li>
+                <li>DS/CS 563: <a href="https://cs-people.bu.edu/aene/cs531sp22/schedule.html">Algorithmic Techniques for Taming Big Data</a> (F21)</li>                
+            </ul>
+
+        
+        <h2>Recent Alumni <!--span style="font-size: 14px;">(PhDs and Postdocs)</span--></h2>
+            <ul>
+                <ul>
+                 <li><a href="https://sites.google.com/view/edentalya/home">Talya Eden</a></li>                
+                 <li><a href="https://marco.ntime.org/">Marco Carmosino</a></li>
+                 <li><a href="https://spooner.cc/">Nicholas Spooner</a></li>
+                 <li><a href="https://aloni.net/">Aloni Cohen</a></li>
+                 <li><a href="https://www.eylonyogev.com/about">Eylon Yogev</a> (Postdoc, &#8217;20 &#8211; &#8217;21)</li>              
+                <li><a href="http://cs-people.bu.edu/jyz16/"><span>Jiayu Zhang </span></a> (PhD &#8217;21)</li>         
+                <li><span><a href="http://cs-people.bu.edu/rameshkp/">Ramesh Krishnan Pallavoor</a> (PhD &#8217;20)</span></li>                
+                 <li><a href="https://www.adrianvladu.org/">Adrian Vladu</a> (Postdoc, &#8217;17 &#8211; &#8217;20)</li>   
+                <li><a href="https://audramarymcmillan.wixsite.com/mysite">Audra McMillan</a> (Postdoc, &#8217;18 &#8211; &#8217;20)</li>   
+                <li><a href="http://cs-people.bu.edu/nvarma/"><span>Nithin Varma</span></a> (PhD &#8217;19)</li>            
+                <li><a href="http://www.omthakkar.com/">Om Thakkar</a> (PhD &#8217;19)</li>      
+                <li><a href="http://cs-people.bu.edu/etani/">Erasmo Tani</a> (PhD student &#8217;17-&#8217;19, transferred to University of Chicago)</li>             
+                <li><a href="http://www.bu.edu/cs/profiles/lorenzo-orecchia/">Lorenzo Orecchia</a> (Faculty, &#8217;15-&#8217;19)</li>           
+                <li>Zhenyu Liao (PhD &#8217;18)</li>                                                                
+                <li><span>Hannah Flynn (MS &#8217;18)</span></li>                       
+                <li><a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a> (Postdoc, &#8217;16-&#8217;18)</li>
+            </ul>
+    </div>
+    
+</body>
+    
+<script>
+    function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="default" and click on it
+    document.getElementById("default").click();
+    
+    // Calendar
+    $(document).ready(function() {
+		$.getScript('//apis.google.com/js/client.js?onload=handleClientLoad');
+		pushEventTable();
+    });
+
+</script>
+    
+</html>
