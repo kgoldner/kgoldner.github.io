@@ -250,3 +250,38 @@ strong {
 {
     font-size: 85%;
 }
+
+.groupcell {
+    width: 100px;
+    /*vertical-align: top;*/
+    padding: 0px 10px;
+    border-radius: 25px;
+    /*margin: 0px 3px;*/
+}
+
+.groups {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;    
+    text-align: center;    
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 200px; /*35px;*/
+    height: 18px;
+    line-height: 18px;
+}
+
+.algs {
+    background-color: rgb(6, 129, 129);
+}
+
+.sec {
+    background-color: rgb(187, 39, 26);
+}
+
+.pl {
+    background-color: rgb(68, 6, 129);
+    
+}
