@@ -2,8 +2,8 @@ body {
     padding: 50px;
     
     margin: auto;
-    max-width: 1200px;
-    min-width: 1200px;
+    /*max-width: 1200px;*/
+    /*min-width: 1200px;*/
 
     line-height: 130%;
     font-size: 18px;
@@ -284,4 +284,10 @@ strong {
 .pl {
     background-color: rgb(87, 41, 154);  /*rgb(81, 43, 148);  rgb(68, 6, 129);*/
     
+}
+
+#lr-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
