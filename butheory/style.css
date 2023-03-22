@@ -1,5 +1,5 @@
 body {
-    padding: 50px;
+    padding: 50px 75px;
     
     margin: auto;
     /*max-width: 1200px;*/
@@ -13,19 +13,20 @@ body {
 }
 
 #left  { 
-    /*float: left;  */
-    width: 700px;
-    padding: 0px 50px;
+    width: 530px;
+    flex-grow: 3;
+}
+
+#mid  { 
+    width: 75px;
+    flex-shrink: 10;
 }
 
 #right  { 
-    /*float: right;  */
     width: 400px;
     display: flex;
     flex-direction: column;
-    flex-shrink: 3;
     flex-grow: 2;
-    padding: 0 50px;
 }
 
 a {
