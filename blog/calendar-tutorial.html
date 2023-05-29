@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	
+	<title>
+		Seminar Calendar Tutorial
+	</title>
+	
+	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" /> 
+	<link rel="icon" href="https://www.kiragoldner.com/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" id="theme" href="dark.css" />
+	<!-- <link rel="stylesheet" type="text/css" id="theme" href="darknew.css"> -->
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57683203-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-57683203-1');
+</script>	
+	
+</head>
+
+<body>
+
+    <div class="nav">  
+                <div class="headname">Kira Goldner</div>    
+                <div class="off"><a href="../index.html">About</a></div>        
+                <div class="off"><a href="../research.html">Research</a></div>
+                <div class="off"><a href="../teaching/index.html">Teaching</a></div> 
+                <div class="off"><a href="../service.html">Diversity &amp; Service</a></div>                   
+                <div class="off"><a href="../resources.html">Resources</a></div>
+                <div class="on"><a href="index.html">Blog</a></div>                
+                <div class="links">
+                        <a href="https://dblp.org/pers/g/Goldner:Kira.html"><img src="../images/dblp-light.png" height="30px" /></a>
+                        <a href="https://twitter.com/kiragoldner"><img src="../images/twitter-light.png" height="30px" /></a>
+                        <a href="https://scholar.google.com/citations?user=3Gk0uc8AAAAJ&hl=en"> <img src="../images/scholar-light.png" height="30px" /></a>
+                </div>
+    </div>
+
+<div id="headpane">
+	<br/><br/>
+    <div id="pagetitle">
+        <!--div id="headerimg"></div-->
+        <div id="name" style="margin-left: -30px; width: 750px;"><p class="myname">The Strategy Space</p>
+        </div>
+    </div>
+    
+
+    
+</div>
+    
+<div id="contentpane">
+    
+    <div id="content">
+    
+    
+    <hr class="head" />
+                <span  style="float: right;"><a href="index.html">Blog home &raquo;</a></span>
+
+    <h1>Seminar Calendar Tutorial</h1>
+    <p style="font-size: 80%;">May 28, 2023</p>
+    
+        <p>In my early years as a PhD student at UW, <a href="https://homes.cs.washington.edu/~jrl/" target="_blank">James Lee</a> revamped the <a href="https://theory.cs.washington.edu/" target="_blank">theory website</a> into its current glorious state.  One of the coolest things (in my opinion) about this website is the list of upcoming "theory talks" right at the top.  Date, speaker, title.  And if you click on it, you get an abstract and location.  The most beautiful part?  This is actually a google calendar, so (1) you can subscribe to it, if like me, you can't function without everything on your calendar, and (2) it's all updated just be editing the calendar&mdash;no need to modify the website itself and push changes.  If a student is in charge of the seminar, you can just share calendar editing privileges with them for the semester.<br/><br/>
+        
+        I've since been at <a href="https://theory.cs.columbia.edu/" target="_blank">Columbia</a> and <a href="https://www.bu.edu/tcs/" target="_blank">BU</a> and copied the general idea of this extremely useful and informative website, adding this calendar to both.  A very long time ago, James suggested that maybe if we ever had time, we could make a guide so others knew how to do this.  In honor of James initially setting up this infrastructure, here we go.<br/><br/>
+        
+        The first step is to embed the google calendar using javascript.  James's original calendar code as the following link (and note that he wrote it in a single pass, and it's not particularly responsive e.g. on mobile devices, so please feel free to improve on it):<br/><br/>
+
+<a href="http://theory.cs.washington.edu/js/cal.js" target="_blank">http://theory.cs.washington.edu/js/cal.js</a><br/><br/>
+
+Quoting what James initially told me, "It produces (dynamic) HTML in a fairly straightforward way, except that for the "accordion" effect, it using bootstrap.  (Bootstrap is a light-weight CSS framework designed to dynamically adjust to different media types.)  There are a few weird hacks in there, like if an event is "full day" (no specified start time) then Google often gets the day wrong when it tries to interpret the start date in the local time zone, and I found that adding 1HR to the start time fixes most issues." <br/><br/>
+
+The more difficult part is in obtaining a clientID and an API Key from google, and you may want to create a new Google login for this purpose. The following instructions are based originally on the following <a href="https://help.crystalcommerce.com/en/articles/1389813-how-to-find-the-api-key-for-your-google-calendar" target="_blank">article</a>, but have been updated with my more recent experience, as Google's interface as been updated.  I last did this about a year ago, so I apologize if it's out of date again.<br/><br/>
+
+<h2>How to get an API Key:</h2><br/>
+
+Sign in to your Google account.  Go to <a href="https://console.developers.google.com/project" target="_blank">https://console.developers.google.com/project</a> and click "Create Project." <br/><br/>
+
+<img src="images/create-project.png" width="700px" /> <br/><br/>
+
+
+Enter a project name&mdash;you don't need to change anything else. For this example, I'm using "BU-theory-cal" <br/><br/>
+<img src="images/project-name.png" width="700px" /> <br/><br/>
+
+
+Click "Create" and then wait for the project to be created. When it's done, you should see a notification badge at the top right of your screen.  Click on the project from here. <br/><br/>
+<img src="images/select-project.png" width="700px" /> <br/><br/>
+
+Scroll to the bottom of the page and click "Explore and enable APIs." <br/><br/>
+<img src="images/enable-APIs.png" width="700px" /> <br/><br/>
+
+Click "Enable APIS and Services." <br/><br/>
+<img src="images/enable-APIs-and-services.png" width="700px" /> <br/><br/>
+
+Click in the Search field and type "Calendar." <br/><br/>
+<img src="images/search.png" width="700px"> <br/><br/>
+
+Click the "Google Calendar API" from the search results. <br/><br/>
+<img src="images/search-calendar.png" width="700px"> <br/><br/>
+
+Click the "Enable" button. <br/><br/>
+<img src="images/calendar-enable.png" width="700px"> <br/><br/>
+
+
+
+Click the "Credentials" link on the left. <br/><br/>
+<img src="images/credentials.png" width="700px"> <br/><br/>
+
+Click "Create Credentials." <br/><br/>
+<img src="images/create-credentials.png" width="700px"> <br/><br/>
+
+Click "OAuth client ID." <br/><br/>
+<img src="images/oauth-client-ID.png" width="700px"> <br/><br/>
+
+Click "Configure Consent Screen." <br/><br/>
+<img src="images/configure-consent-screen.png" width="700px"> <br/><br/>
+
+Check "External" and click "Create." <br/><br/>
+<img src="images/external.png" width="700px"> <br/><br/>
+
+Fill in your app information&mdash;this will not wind up being visible to anyone, so it is not really important. <br/><br/>
+<img src="images/app-information.png" width="700px"> <br/><br/>
+
+The domain needs to be private (not .edu or .org) and top level, so use a domain owned by you or someone on your team.  This is not where the calendar needs to be hosted.  <br/><br/>
+<img src="images/app-domain.png" width="700px"> <br/><br/>
+
+Click "add or remove scopes." <br/><br/>
+<img src="images/add-or-remove-scopes.png" width="700px"> <br/><br/>
+
+We'll add a single API scope found on the third page that just has "See the events on public calendars"&mdash;check this one and add. <br/><br/>
+<img src="images/gcal-API.png" width="700px"> <br/><br/>
+
+
+
+
+Go and click the "Create credentials" button again, and from the dropdown, you should now be able to click API key <br/><br/>
+
+<img src="images/API-key.png" width="700px"> <br/><br/>
+
+
+
+An API key will be generated.  Enter a new name in the "Name" field. For example I am using "BU Calendar API key 1."  In the "Application restrictions" section, click "HTTP referrers (web sites).  In the referrers entry field, you can restrict to your website, e.g., I restrict to *.bu.edu/* to restrict to only websites on BU's domain.<br/><br/>
+
+
+
+<img src="images/key-restrictions.png" width="700px"> <br/><br/>
+
+<!--Click "Restrict Key" to adjust important settings <br/><br/>-->
+
+Under API restrictions, click "Don't restrict key" and then click "save." <br/><br/>
+
+<img src="images/API-restrictions.png" width="700px"> <br/><br/>
+
+Your API key has been created now, and you need to copy it so you can install it. <br/><br/>
+
+Click the copy icon next to the API key to copy it to your computer's clipboard. <br/><br/><br/>
+
+<h2>Creating a client ID:</h2><br/><br/>
+
+Now we'll create an OAuth client ID.  Go to "Create Credentials" one last time and select "OAuth client ID" from the drop-down this time.<br/><br/>
+
+<img src="images/oauth-client-ID-again.png" width="700px"> <br/><br/>
+
+Select "Web application" under "Application type" and give it a name&mdash;I've chosen "BU Calendar Web client 1."  Add in the base url of your domain, which for me is https://www.bu.edu despite the fact that I will actually use it at a lower level of the domain.<br/><br/>
+
+<img src="images/create-oauth-client-ID.png" width="700px"> <br/><br/>
+
+
+Click "Save." <br/><br/>
+
+Your OAuth client ID has also been created&mdash;again click the copy icon next to the OAuth client ID to copy it to your computer's clipboard. <br/><br/><br/>
+
+<h2>Finishing Up:</h2><br/><br/>
+
+You will also need your google calendar's ID.  To do that, give the relevant Google account admin access to the calendar.  Go into Google Calendar, look under "My Calendars" on the left, and click on the three dots beside the calendar you want.  Go to "Settings and sharing."  If you scroll down, you will see the "Calendar ID."  That's what goes in the clientID variable in the code. <br/><br/>
+
+
+<!--Obviously only follow the generic steps, not anything having to do with "crystal commerce."  I believe you can safely leave the HTTPS referrer wildcard empty, but you can also put in wildcards that match your site.  (You don't want to be too restrictive here, as there are sometimes URLs that people use.  I probably used "*.cs.washington.edu/*" and "*.cs.uw.edu/*")
+
+In any case, that will get you an API key (which you can paste into the javascript code).
+
+You also want the clientID.  To do that, give the relevant Google account admin access to the calendar.  Go into Google Calendar, look under "My Calendars" on the left, and click on the three dots beside the calendar you want.  Go to "Settings and sharing."  If you scroll down, you will see the "Calendar ID."  That's what goes in the clientID variable in the code.-->
+
+(From here, you can also ensure that the calendar is visible to the public, and that appropriate people have write access to add events.) <br/><br/>
+
+If you did all that, the calendar code should now work (but only on the website you allowed for with the APIkey, and only live). It's okay that the clientID and APIkey are world-readable.  Then just allow read access to the (public) calendar.
+</p>
+        
+        <p><a href="index.html">Blog home &raquo;</a></p>
+        
+
+
+
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = calendar-tutorial.html;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 8; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://kiragoldner.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                          
+                
+
+              </ul><br/><br/></li></ul>
+              
+            </ul> 
+
+        </p>
+ 
+   </div></div>
+
+    <div id="buffer"></div>
+    <div id="footer">   <div>Created by Kira Goldner</div> </div>
+        
+       <div class="lightdark"><button class="colormode darktoggle" onclick="swapStyleSheet()"></button></div>
+
+  </body>
+
+<!--google scholar: http://scholar.google.com/citations?user=3Gk0uc8AAAAJ-->
+
+</html>
+
+<script src="toggledark.js"></script>
