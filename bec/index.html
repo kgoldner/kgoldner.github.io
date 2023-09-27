@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    
+<!--HEAD-->
+<head>
+
+    <title>Boston EconCS</title>
+    
+    <!--open links in new tab-->
+    <!-- <base target="_blank"> -->
+
+    <!--JS-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>	
+    <script src="js/cal.js"></script>	
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="bootstrap.min.css">	
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="images/og-image.png">
+</head>
+
+<!--BODY-->
+<body>
+    
+    
+
+<div id="lr-container">
+    <div id="left">
+    
+    <h1 class="title">Boston EconCS</h1>
+        
+        <div id="welcome-blurb">
+		
+		<p> Welcome to the Theoretical Computer Science (TCS) research group. Research in TCS (and in our group) encompasses diverse areas such as theory of computation, complexity, sublinear algorithms, optimization, distributed and parallel computing, data privacy, machine learning and more. The common theme behind the TCS approach to these research directions is a focus on precise models and rigorous mathematical analysis.
+		</p>
+
+        <p>We hold a weekly <a href="https://www.bu.edu/cs/algorithms-and-theory-seminar/">Theory Seminar</a>.  For Fall 2023, we meet Mondays from 1:30-2:30pm simultaneously in person and over Zoom.  For other events and general announcements, you can subscribe to the TCS mailing list <a href="http://cs-mailman.bu.edu/mailman/listinfo/tcs-announce">here</a>.</p>
+		
+		<p> If you are interested in joining the TCS research group, potential PhD students should apply either to the <a href="https://www.bu.edu/cs/phd-program/">Department of Computer Science</a> or the <a href="https://www.bu.edu/cds-faculty/programs-admissions/phd-degree/">Faculty of Computing &amp; Data Sciences</a> PhD programs, depending on their interests and intended faculty advisors.  Inquiries about postdoc positions should be directed to faculty directly.
+		</p>
+
+        </div>
+        
+        <div id="people">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Faculty')" id="default"><h2>Faculty</h2></button>
+                <button class="tablinks" onclick="openTab(event, 'Postdocs')"><h2>Postdocs</h2></button>
+                <button class="tablinks" onclick="openTab(event, 'Students')" id="default"><h2>Students</h2></button>
+                <!--button class="tablinks" onclick="openTab(event, 'Visitors')"><h2>Visitors</h2></button-->
+            </div>
+
+            <!-- Faculty -->
+            <div id="Faculty" class="tabcontent">
+                <div class="imgs-row">
+                    
+                    <div class="img-container">
+                        <img src="images/headshots/kiragoldner.jpeg">
+                        <div class="img-name"><a href="https://www.kiragoldner.com/">Kira Goldner</a></div>
+                        <div class="img-interests">Algorithmic Mechanism Design &amp; Game Theory, Algorithms, Microeconomics</div>
+                        <div class="groups"><div class="algs groupcell">Algs &amp; ToC</div></div>  
+                    </div>
+                    
+                      <div class="img-container">
+                        <img src="images/headshots/charapodimata.jpg">
+                        <div class="img-name"><a href="https://www.charapodimata.com/">Chara Podimata</a></div>
+                        <div class="img-interests">Incentive-Aware ML, Social Computing, Online Learning, Mechanism Design</div>
+                        <div class="groups"><div class="algs groupcell">Algs &amp; ToC</div></div>  
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+            <!-- Postdocs -->
+            <div id="Postdocs" class="tabcontent">
+                <div class="imgs-row">
+
+
+                </div>
+
+            </div>
+
+            <!-- Students -->
+            <div id="Students" class="tabcontent">
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/baileyflanigan.jpeg">
+                        <div class="img-name"><a href="https://sites.google.com/andrew.cmu.edu/baileyflanigan/home">Bailey Flanigan</a></div>
+                        <div class="img-interests">Democracy, Social Choice</div>
+                        <div class="groups"><div class="algs groupcell">Algs &amp; ToC</div></div>  
+                    </div>                       
+
+                    <!--div class="img-container">
+                        <img src="images/headshots/freddy.jpeg">
+                        <div class="img-name"><a href="https://freddyreiber.info/">Freddy Reiber</a></div>
+                        <div class="img-interests">Economics and Computation</div>
+                        <div class="groups"><div class="algs groupcell">Algs &amp; ToC</div></div>  
+                    </div>                  
+                          
+                    
+                    <div class="img-container">
+                        <img src="images/headshots/thodoris-tsilivis.png">
+                        <div class="img-name"><a href="https://sites.google.com/view/theotsilivis/home">Thodoris Tsilivis</a></div>
+                        <div class="img-interests"></div>
+                        <div class="groups"><div class="algs groupcell">Algs &amp; ToC</div></div> 
+                    </div-->                                           
+
+                
+            </div>
+            
+            <!-- Visitors -->            
+            <!--div id="Visitors" class="tabcontent">
+                <div class="imgs-row">
+                
+                    <div class="img-container">
+                        <img src="images/headshots/rachel.jpg">
+                        <div class="img-name"><a href="https://www.kiragoldner.com/">Rachel Cummings</a></div>
+                        <div class="img-interests">Privacy, Algorithmic Game Theory, Machine Learning Theory, Fairness</div>
+                    </div>
+
+	                
+            	</div>
+            </div-->
+        </div>
+    </div></div>
+    
+    <div id="mid"></div>   
+
+    <div id="right">
+        
+        <!-- JS calendar -->
+        <!--div class="row mt-3">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12"-->
+        <div> 
+            <div>
+               <h2 style="display: inline">Calendar</h2> &nbsp;
+                  <span class="align-text-top">
+
+                             [ <a id="earlierEvents" role="link" class="activelink" href="#" onclick="earlierEvents()" target="_self">earlier</a> |
+                             <a id="laterEvents" role="link" class="activelink" href="#" onclick="laterEvents()" target="_self">later</a> ]
+
+                             &nbsp; [ <a class="" href="https://calendar.google.com/calendar/embed?src=812dedd5ffbd92ae98c9a0d98b2e1c4f6f3fa5daa4d9a1c23e60b20caca73d4b@group.calendar.google.com&ctz=America%2FNew_York">google calendar</a> ]</span>
+                 <div class="row mt-3 pl-4 mb-4">
+                    <div id="sched">
+                      <div class="panel-group" id="accordionCal">
+                      </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <!-- <h2 style="display: inline;">Calendar</h2> -->
+<!-- 
+            <br>
+
+            <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Y29sdW1iaWEuZWR1XzFoaTFjYzJocmZ0NDFtNm05a204aWIxa3RjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D81B60&showTitle=0&showCalendars=0&showTabs=0&showPrint=0&showDate=0&mode=AGENDA&showTz=0" style="border-width:0" width="350" height="400" frameborder="0" scrolling="no"></iframe>
+        
+        <br> -->
+
+        <br>
+        
+        
+        <h2>News</h2>
+            <ul>
+                <li><b>Gavin Brown</b>, <b>Adam Smith</b>, and Sam Hopkins (MIT)  won the COLT 2023 Mark Fulk Award for Best Student Paper for their paper "<a href="https://arxiv.org/abs/2301.12250">Fast, Sample-Efficient, Affine-Invariant Private Mean and Covariance Estimation for Subgaussian Distributions</a>."</li>
+                <li><b>Connor Wagaman</b> was awarded a <a href="https://machinelearning.apple.com/updates/spple-scholars-aiml-2023">2023 Hariri Institute Graduate Student Fellowship</a> for pursuing innovative computationally-driven research with the potential for high impact.</li>            
+                <li><b>Satchit Sivakumar</b> was named a <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2023">2023 Apple Scholar in AI/ML</a> for his work on the foundations of privacy-preserving ML.</li>
+                <li><b>Mark Bun</b> was awarded a <a href="https://sloan.org/fellowships/2022-Fellows">2022 Sloan Research Fellowship</a>.</li>
+                <li><b>Adam Smith</b> and collaborators were awarded the <a href="https://awards.acm.org/kanellakis">2021 ACM Paris Kanellakis Theory and Practice Award</a> for their work on the fundamentals of differential privacy.</li>
+            </ul>
+
+        <h2>Related Groups &amp; Events</h2>
+            <ul>
+                <li><a href="https://www.bu.edu/cs/research/theory/">BU Algorithms &amp; Theory</a></li>    
+                <li><a href="https://www2.ccs.neu.edu/theory/seminar.html">Northeastern Theory Seminar</a></li>
+                <li><a href="https://toc.csail.mit.edu/node/424">MIT Theory of Computation Colloquium</a></li>
+                <li><a href="https://econcs.seas.harvard.edu/">Harvard EconCS</a></li>
+
+	    </ul>
+        
+        <h2>Recent Graduate Courses</h2>
+            <ul>
+                <!--li>CS 538: <a href="https://cs-people.bu.edu/aene/cs531sp22/schedule.html">Fundamentals of Cryptography</a> (S24)</li-->
+                <li>CS 599: <a href="https://mcsp.work/MCF2023/">The Meta-Complexity Frontier</a> (F23)</li>
+                <li>CS 531: <a href="https://cs-people.bu.edu/aene/cs531fa23/schedule.html">Advanced Optimization Algorithms</a> (F23)</li>
+                <li>CS 535: <a href="https://cs-people.bu.edu/mbun/courses/535_F23/">Complexity Theory</a> (F23)</li>
+                <li>DS 574: <a href="https://www.kiragoldner.com/teaching/DS574/index.html">Algorithmic Mechanism Design</a> (F23)</li>
+                <li>DS/CS 563: <a href="https://onak.pl/teaching/ds563-spring_2023.php">Algorithmic Techniques for Taming Big Data</a> (S23)</li>               
+                <li>DS 657: <a href="https://cs-people.bu.edu/kaptchuk/teaching/ds457/sp23-classpage.html">Law and Algorithms</a> (S23)</li>   
+                <li>DS 682: <a href="https://learn.responsibly.ai/">Responsible AI, Law, Ethics &amp; Society</a> (S23)</li>      
+                <li>CS 537: <a href="https://cs-people.bu.edu/sofya/cs537/">Randomness in Computing</a> (F22)</li>
+                <li>DS 574: <a href="https://www.kiragoldner.com/teaching/DS574/fall22.html">Algorithmic Mechanism Design</a> (F22)</li>
+                <li>DS 657: <a href="https://cs-people.bu.edu/kaptchuk/teaching/ds457/sp22-classpage.html">Law and Algorithms</a> (S22)</li>
+                <li> CS 599: <a href="https://cs-people.bu.edu/mbun/courses/599_S22/">Mathematical Methods for Theoretical CS</a> (S22)</li>    
+            </ul>
+
+        
+        <h2>Recent Alumni <!--span style="font-size: 14px;">(PhDs and Postdocs)</span--></h2>
+            <ul>
+                <ul>
+                <li><a href="https://cs-people.bu.edu/grbrown/">Gavin Brown</a> (PhD '23)</li> 
+               <li><a href="http://www.mit.edu/~maryama/">Maryam Aliakbarpour</a> (Postdoc '21&ndash;'23)</li>     
+               <li><a href="https://www.marcel-neunhoeffer.com/">Marcel Neunhoeffer</a> (Postdoc '21&ndash;'23)</li> 
+                <li><a href="https://www.bu.edu/cs/profiles/tomislav-petrovic/">Tomislav Petrovic</a> (PhD '22)</li>
+                <li><a href="https://www.ra1issa.com">Rawane Issa</a> (PhD '22)</li>
+                 <li><a href="https://sites.google.com/view/edentalya/home">Talya Eden</a> (Postdoc '21&ndash;'22)</li>                
+                 <li><a href="https://marco.ntime.org/">Marco Carmosino</a> (Postdoc '19&ndash;'21)</li>
+                 <li><a href="https://spooner.cc/">Nicholas Spooner</a> (Postdoc '20&ndash;'21)</li> 
+                 <li><a href="https://aloni.net/">Aloni Cohen</a> (Postdoc '19&ndash;'21)</li>
+                 <li><a href="https://www.eylonyogev.com/about">Eylon Yogev</a> (Postdoc '20&ndash;'21)</li>              
+                <li><a href="https://www.sarahscheffler.net"><span>Sarah Scheffler </span></a> (PhD '21)</li> 
+                <li><a href="http://cs-people.bu.edu/jyz16/"><span>Jiayu Zhang </span></a> (PhD '21)</li>         
+                <li><span><a href="http://cs-people.bu.edu/rameshkp/">Ramesh Krishnan Pallavoor</a> (PhD '20)</span></li>                
+                 <li><a href="https://www.adrianvladu.org/">Adrian Vladu</a> (Postdoc '17&ndash;'20)</li>   
+                <li><a href="https://audramarymcmillan.wixsite.com/mysite">Audra McMillan</a> (Postdoc '18&ndash;'20)</li>   
+                <li><a href="http://cs-people.bu.edu/nvarma/"><span>Nithin Varma</span></a> (PhD '19)</li>            
+                <li><a href="http://www.omthakkar.com/">Om Thakkar</a> (PhD '19)</li>      
+                <li><a href="http://cs-people.bu.edu/etani/">Erasmo Tani</a> (PhD student '17&ndash;'19, transferred to University of Chicago)</li>             
+                <li><a href="http://www.bu.edu/cs/profiles/lorenzo-orecchia/">Lorenzo Orecchia</a> (Faculty '15&ndash;'19)</li>           
+                <li>Zhenyu Liao (PhD '18)</li>                                                                
+                <li><span>Hannah Flynn (MS '18)</span></li>                       
+                <li><a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a> (Postdoc '16&ndash;'18)</li>
+            </ul>
+    </div>
+</div>    
+    
+</body>
+    
+<script>
+    function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="default" and click on it
+    document.getElementById("default").click();
+    
+    // Calendar
+    $(document).ready(function() {
+		$.getScript('//apis.google.com/js/client.js?onload=handleClientLoad');
+		pushEventTable();
+    });
+
+</script>
+    
+</html>
