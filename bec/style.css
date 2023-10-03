@@ -7,8 +7,8 @@ body {
 
     line-height: 130%;
     font-size: 18px;
-    font-family: poppins, sans-serif; /*'Silom'*/
-    font-weight: 400;
+    font-family: avenir, sans-serif; /*poppins 'Silom'*/
+    font-weight: 425;
     color: dimgray; /*rgb(140, 142, 145); rgb(105, 106, 107);    rgb(37, 38, 40);*/
 }
 
@@ -40,7 +40,7 @@ a:hover {
 }
 
 h1, h2, h3 {
-    font-family: 'Silom', sans-serif;
+    font-family: 'Avenir', sans-serif;  /*Silom */
     /*word-spacing: -2px;*/
     color: black;
 }
