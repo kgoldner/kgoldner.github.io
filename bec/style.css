@@ -7,9 +7,9 @@ body {
 
     line-height: 130%;
     font-size: 18px;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: poppins, sans-serif; /*'Silom'*/
     font-weight: 400;
-    color: rgb(37, 38, 40);
+    color: dimgray; /*rgb(140, 142, 145); rgb(105, 106, 107);    rgb(37, 38, 40);*/
 }
 
 #left  { 
@@ -30,18 +30,19 @@ body {
 }
 
 a {
-    color: rgb(187, 39, 26);
+    color: #BB271A;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    text-decoration-color: rgb(187, 39, 26);
+    text-decoration-color: #BB271A;
 }
 
 h1, h2, h3 {
-    font-family: 'Istok Web', sans-serif;
-    word-spacing: -2px;
+    font-family: 'Silom', sans-serif;
+    /*word-spacing: -2px;*/
+    color: black;
 }
 
 
@@ -64,7 +65,7 @@ ul {
 
 
 strong {
-    color: rgb(6, 129, 129);
+    color: rgb(187, 39, 26);   /*rgb(6, 129, 129);*/
 }
 
 
@@ -86,7 +87,7 @@ strong {
     padding: 14px 16px;
     padding-left: 0px;
     padding-right: 36px;
-    color: rgb(6, 129, 129); /*rgb(108, 172, 228);*/
+    color: rgb(187, 39, 26); /*rgb(6, 129, 129)   rgb(108, 172, 228);*/
 }
 
 .tab-button h2 {
@@ -104,11 +105,11 @@ strong {
 }
 
 .tab button.active h2 {
-    color: rgb(187, 39, 26);
+    color: #BB271A;
     position: relative;
     text-decoration: none;
     padding-bottom: -10px;
-    border-bottom: 2px solid rgb(187, 39, 26);
+    border-bottom: 2px solid #BB271A;
     display: inline-block; /*Add this*/
     left: 50%; /*Add this*/
     transform: translate(-50%, 0); /*Add this*/
@@ -132,13 +133,13 @@ strong {
 }
 
 .imgs-row a {
-    color: rgb(6, 129, 129);
+    color: rgb(187, 39, 26);
     text-decoration: inherit;
 }
 
 .imgs-row a:hover {
     text-decoration: underline;
-    text-decoration-color: rgb(6, 129, 129);
+    text-decoration-color: rgb(187, 39, 26);
 }
 
 #people {
