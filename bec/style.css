@@ -186,6 +186,15 @@ strong {
     width: 100%;
 }
 
+.director {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    width: 100%;
+}
+
 /************/
 /* Calendar */
 /************/
