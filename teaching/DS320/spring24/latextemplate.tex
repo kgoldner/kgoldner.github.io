@@ -1,0 +1,164 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{algorithm}
+\usepackage[noend]{algorithmic}
+\usepackage{amsmath,amssymb,amsthm}
+
+
+
+% These define new environments / formats for lemmas, definitions, running time, etc.
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{notation}{Notation}
+\newtheorem*{claim}{Claim}
+\newtheorem{observation}{Observation}
+\newtheorem{conjecture}[lemma]{Conjecture}
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\newtheorem{proposition}[lemma]{Proposition}
+\newtheorem*{rt}{Running Time}
+
+
+% These define nice ways to format P and OPT (use \P or \opt)
+\def\P{\ensuremath{\mathcal{P}}}
+\def\opt{\ensuremath{\textsc{opt}}}
+
+
+% enumerate uses a., b., c., ...
+\renewcommand{\labelenumi}{\bf \alph{enumi}.}
+
+
+%%% TODO: Fill out the appropriate homework number and your name below
+%%%
+%%%
+% Changes the title box on the first page
+\renewcommand\maketitle{
+\begin{center}
+\begin{tabular*}{6.44in}{l @{\extracolsep{\fill}}c r}
+\bfseries  &  & \bfseries DS 320 Spring 2023 \\
+\bfseries&  & \bfseries  Homework \#? Solutions  \\
+\bfseries   &   &  \bfseries My Name \\ 
+\end{tabular*}
+\end{center} }
+
+
+
+
+%%
+%%
+%% THE REAL STUFF STARTS HERE
+%%
+%%
+\begin{document}
+\maketitle
+
+
+%%% TODO: PLEASE LIST YOUR COLLABORATORS HERE
+\noindent Collaborators:
+
+
+\section*{Part  1: Big-Oh No!} 
+% TODO: Your solution to P1 goes here. 
+
+
+
+%%% WHAT FOLLOWS ARE USEFUL LATEX TOOLS
+%%% TODO: PLEASE DELETE WHAT YOU DON'T USE ON EACH HWK, KTHXBYE!
+
+
+
+%% To put in blank space (vertical space), use the following command.
+%% You can adjust the number of points to suit your tastes.
+%% negative points will shift stuff up, if you want
+\vspace*{50pt}
+
+%%% Possibly useful stuff
+\noindent Possibly useful stuff.
+
+% use the enumerate environment for numbered enumeration (bullets).
+% latex will keep track of the numbering for you
+% the default, right now, is to number with a), b), c), etc.
+\begin{enumerate}
+\item enumerate stuff with
+\item alphabet characters.
+\end{enumerate}
+
+% use the itemize environment for bullets.
+% you can either use the default 'bullet', or you can specify your own in [ ]'.
+\begin{itemize}
+\item[*] or, can control the enumeration,
+\item[2.] but then it's up to you to keep track of the numbering system
+\item the default is a plain ol' bullet
+\end{itemize}
+
+% Regular text is roman font.
+Blahblahblah in roman font, indented by default.\\ 
+
+% and \\ ends a line. 
+ %Note that a new line is automatically indented 
+ %(unless it is the first line in your subsection / question)
+ 
+\noindent \textbf{Blahalala} in bold font, unindented.\\
+ 
+\noindent \emph{blahblahblah} in italics. \\
+
+\noindent \verb+blah blahblah blah+ \texttt{blahblahba} in true-type font.\\ 
+
+\begin{claim}
+something happens $\iff$ something else happens.
+\end{claim}
+
+\begin{proof}And I'm proving it here. I'll start with the forward direction, and then the backwards.\medskip
+
+\noindent $(\Rightarrow)$ Forward direction proven here.\medskip
+
+\noindent $(\Leftarrow)$ Backwards direction proven here.\end{proof}
+
+\begin{lemma}
+Hellloooo lemma!
+\end{lemma}
+
+\begin{rt}
+As suggested by Arlo...
+\end{rt}
+
+%% I can force a new page as follows
+\newpage
+%and I may want to add a little vertical space
+\vspace*{2pt}
+
+Now I will put up a system of equations all lined up n' purdy.
+\begin{align*}
+LHS &=  n(n-1) \\
+&=  2n(n-1)/2 \\
+& \stackrel{(*)}{=}  RHS~.
+\end{align*}
+%% Whatever is directly to the right of the & gets lines up. In this case, the equal signs.
+
+Oh, and this is nifty, although maybe a bit confusing...
+\begin{align*}
+e_{ij} &=  \left\{ \begin{tabular}{ll} $\{v_i, v_j\}$ & if edges are undirected, \\
+						       $(v_i, v_j)$ & otherwise. \end{tabular} \right.
+\end{align*}
+
+Here is an environment to write pseudocode:
+\begin{algorithmic}
+\FOR{$i=1, 2, \ldots, n-1$}
+\STATE Store $A[i]+A[i+1]$ in $B[i,i+1]$ 
+\FOR{$j=i+2, i+3, \ldots, n$}
+\STATE Store $A[j]+B[i,j-1]$ in $B[i,j]$
+\ENDFOR
+\ENDFOR
+\end{algorithmic}
+
+below is some vertical space. You can use this to make room for pictures and stuff that you want to draw by hand.
+
+\vspace{4cm}
+
+See? Vertical space
+
+\section*{Part  2: Next Name} 
+
+
+%% DON'T ERASE THIS LAST LINE
+\end{document}
