@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             links.forEach(link => {
                 const linkHref = link.getAttribute('href');
-                const linkSection = linkHref.split('/').pop().replace('.html', '');
+                const linkSection = linkHref.split('/').shift().replace('.html', '');
 
                 if (linkSection === currentSection) {
                     link.parentElement.classList.add('on');
