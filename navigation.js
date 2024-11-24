@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Determine the depth of the current page
+    const pathDepth = window.location.pathname.split('/').filter(Boolean).length - 1;
+
     // Dynamically load the navigation bar
-    fetch('navbar.html')
+    fetch(`.${'../'.repeat(pathDepth)}navbar.html`)  // Adjust path based on the current depth level
         .then(response => {
             if (!response.ok) throw new Error('Failed to fetch navbar');
             return response.text();
@@ -8,9 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(html => {
             const navbarElement = document.getElementById('navbar');
             navbarElement.innerHTML = html;
-
-            // Determine the depth of the current page
-            const pathDepth = window.location.pathname.split('/').filter(Boolean).length - 1;
 
             // Adjust the links in the navbar
             const links = navbarElement.querySelectorAll('.nav a');
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     return;
                 }
 
-                // Adjust the href for links in "on" or "off" classes
+                // Adjust the href for links in "on" or "off" classes based on the current depth
                 const adjustedHref = '../'.repeat(pathDepth) + originalHref;
                 link.setAttribute('href', adjustedHref);
             });
