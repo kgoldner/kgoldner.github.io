@@ -1,27 +1,21 @@
-/*
-function swapStyleSheet(sheet){
-  document.getElementById('theme').setAttribute('href', sheet);
-  localStorage.setItem("sheet", sheet);
+// Function to detect system preference and set the initial theme
+function detectAndSetTheme() {
+    let savedTheme = localStorage.getItem("sheet");
+    let defaultTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark.css' : 'update.css';
+
+    // Use saved theme if available, otherwise default to system preference
+    let theme = savedTheme || defaultTheme;
+    document.getElementById('theme').setAttribute('href', theme);
 }
 
-window.onload = _ =>
- swapStyleSheet(
-  localStorage.getItem("sheet") || "default.css"
- );
- */
- 
-function swapStyleSheet(){
-    var href = document.getElementById('theme').getAttribute('href');
-    var new_href = 'dark.css';
+// Function to swap between light and dark mode
+function swapStyleSheet() {
+    var currentHref = document.getElementById('theme').getAttribute('href');
+    var newHref = currentHref === 'dark.css' ? 'update.css' : 'dark.css';
 
-    if (href == 'dark.css') {
-        new_href = 'update.css';
-    }
-
-    document.getElementById('theme').setAttribute('href', new_href);
-        localStorage.setItem("sheet", new_href);
+    document.getElementById('theme').setAttribute('href', newHref);
+    localStorage.setItem("sheet", newHref);
 }
 
-/*window.onload = _ =>
-    let href = localStorage.getItem("sheet") || "dark.css";
-    document.getElementById('theme').setAttribute('href', href);*/
+// Call the detectAndSetTheme function on page load
+window.onload = detectAndSetTheme;    
