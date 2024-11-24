@@ -21,8 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             // Highlight the current section
-            const pathParts = window.location.pathname.split('/').filter(Boolean);
-            const currentPage = pathParts.length > 0 ? pathParts[0] : '';
+            const currentPage = pathParts[0] || 'index'; // Default to 'index' if root directory
             
             // Remove ".html" extension from the current page name
             const currentSection = currentPage.replace('.html', '');
