@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Highlight the current section
             const pathParts = window.location.pathname.split('/').filter(Boolean);
-            const currentPage = pathParts.length > 0 ? pathParts[1] : '';
+            const currentPage = pathParts.length > 0 ? pathParts[0] : '';
             
             // Remove ".html" extension from the current page name
             const currentSection = currentPage.replace('.html', '');
