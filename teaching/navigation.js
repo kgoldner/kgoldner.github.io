@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Determine the depth of the current page
-    const pathDepth = window.location.pathname.split('/').filter(Boolean).length - 1;
-
     // Dynamically load the navigation bar
-    fetch(getNavbarPath(pathDepth))
+    fetch('navbar.html')
         .then(response => {
             if (!response.ok) throw new Error('Failed to fetch navbar');
             return response.text();
@@ -12,22 +9,43 @@ document.addEventListener("DOMContentLoaded", () => {
             const navbarElement = document.getElementById('navbar');
             navbarElement.innerHTML = html;
 
-            // Adjust the links in the navbar based on the current depth
+            // Determine the depth of the current page
+            const pathDepth = window.location.pathname.split('/').filter(Boolean).length - 1;
+
+            // Adjust the links in the navbar
             const links = navbarElement.querySelectorAll('.nav a');
             links.forEach(link => {
                 const originalHref = link.getAttribute('href');
+                const parentDiv = link.parentElement.parentElement;
+
+                if (parentDiv.classList.contains('links')) {
+                    // Skip updating the href for links in the "links" class
+                    return;
+                }
+
+                // Adjust the href for links in "on" or "off" classes
                 const adjustedHref = '../'.repeat(pathDepth) + originalHref;
                 link.setAttribute('href', adjustedHref);
             });
 
+            // Adjust the src of img tags inside the "links" class
+            const socialImages = navbarElement.querySelectorAll('.links img');
+            socialImages.forEach(img => {
+                const originalSrc = img.getAttribute('src');
+                const adjustedSrc = '../'.repeat(pathDepth) + originalSrc;
+                img.setAttribute('src', adjustedSrc);
+            });
+
             // Highlight the current section
             const pathParts = window.location.pathname.split('/').filter(Boolean);
-            const currentPage = pathParts.length > 0 ? pathParts[pathParts.length - 1] : '';
+            const currentPage = pathParts[0] || 'index'; // Default to 'index' if root directory
+
+            // Remove ".html" extension from the current page name
             const currentSection = currentPage.replace('.html', '');
 
             links.forEach(link => {
                 const linkHref = link.getAttribute('href');
-                const linkSection = linkHref.split('/').pop().replace('.html', '');
+                const linkSection = linkHref.split('/').shift().replace('.html', '');
 
                 if (linkSection === currentSection) {
                     link.parentElement.classList.add('on');
@@ -40,10 +58,3 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(err => console.error('Error loading navbar:', err));
 });
-
-// Function to calculate the correct path for navbar.html based on depth
-function getNavbarPath(depth) {
-    // Adjust the navbar path based on the current depth of the page
-    const navbarPath = 'navbar.html';
-    return '../'.repeat(depth) + navbarPath;
-}
