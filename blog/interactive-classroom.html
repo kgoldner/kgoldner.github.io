@@ -1,47 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	
-	<title>
-		Encouraging an Interactive Classroom
-	</title>
-	
-	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" /> 
-	<link rel="icon" href="https://www.kiragoldner.com/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" id="theme" href="dark.css" />
-	<!-- <link rel="stylesheet" type="text/css" id="theme" href="darknew.css"> -->
-	
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57683203-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="utf-8">
+    <title>Encouraging an Interactive Classroom</title>
+    <link rel="icon" href="/favicon.png">
+    <meta property="og:image" content="/favicon.png">
 
-  gtag('config', 'UA-57683203-1');
-</script>	
-	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700|Roboto:400,500&amp;display=swap">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Sets the light/dark theme before the first paint: keep it here and keep it blocking. -->
+    <script src="/theme.js"></script>
+    <script src="/nav.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K14LDEGDMS"></script>
+    <script src="/analytics.js" defer></script>
 </head>
 
-<body>
+<body class="narrow-title">
 
-    <div class="nav">  
-                <div class="headname">Kira Goldner</div>    
-                <div class="off"><a href="../index.html">About</a></div>        
-                <div class="off"><a href="../research.html">Research</a></div>
-                <div class="off"><a href="../teaching/index.html">Teaching</a></div> 
-                <div class="off"><a href="../service.html">Diversity &amp; Service</a></div>                   
-                <div class="off"><a href="../resources.html">Resources</a></div>
-                <div class="on"><a href="index.html">Blog</a></div>                
-                <div class="links">
-                        <a href="https://dblp.org/pers/g/Goldner:Kira.html"><img src="../images/dblp-light.png" height="30px" /></a>
-                        <a href="https://bsky.app/profile/kiragoldner.bsky.social"><img src="../images/bsky-light.png" height="30px" /></a>
-                        <a href="https://scholar.google.com/citations?user=3Gk0uc8AAAAJ&view_op=list_works&sortby=pubdate"> <img src="../images/scholar-light.png" height="30px" /></a>
-                </div>      
-    </div>
+    <div id="navbar"></div>
 
 <div id="headpane">
 	<br/><br/>
@@ -50,22 +31,19 @@
         <div id="name" style="margin-left: -30px; width: 750px;"><p class="myname">The Strategy Space</p>
         </div>
     </div>
-    
 
-    
 </div>
-    
+
 <div id="contentpane">
-    
+
     <div id="content">
-    
-    
+
     <hr class="head" />
                 <span  style="float: right;"><a href="index.html">Blog home &raquo;</a></span>
 
     <h1>Encouraging an Interactive Classroom</h1>
-    <p style="font-size: 80%;">June 6, 2025</p>   
-    
+    <p style="font-size: 80%;">June 6, 2025</p>
+
         <p>I've experimented with some methods in my classroom in the past few years, and this seems to have developed a highly-engaged classroom, both for myself and for others who have adapted them, so I thought I would share them more broadly, especially since as junior faculty we often jump into teaching without much guidance at all.<br/><br/>
 
 As an undergraduate TA at Oberlin College, I received training on how to engage and teach to a diverse classroom of different skill levels. The most important thing I got out of that training was being required to read this article: <a href="https://www.lifescied.org/doi/pdf/10.1187/cbe.13-06-0115">"Structure Matters: Twenty-One Teaching Strategies to Promote Student Engagement and Cultivate Classroom Equity"</a>, which while designed for a biology classroom, has strategies that work in any classroom and completely change the environment. The strategies I have found to be most influential using in my classroom are 1. Wait time and 13. Work in stations or small groups, as well as classroom norms:<br/>
@@ -104,15 +82,15 @@ During the in-class exercises, I walk around the classroom to see if students ha
 
 I typically do only 2-3 in-class exercises taking 5-10 minutes each per class. But, the whole lecture is sprinkled with questions that I may ask while lecturing, and I think having the question formulated and a blank space for ideas also encourages the students to participate, or even just remember what's being asked.  The rest of the lecture, I just fill-in the open spaces on the worksheet with proofs or algorithms, but I try to take ideas from the class as much as possible to keep it interactive.<br/><br/>
 
-<center><img src="images/interval-scheduling.png" width="700px" /> </center><br/><br/>
+<center><img src="images/interval-scheduling.png" width="700" alt="The interval scheduling worksheet handed out in class, with spaces left open to fill in together"> </center><br/><br/>
 
 The above image is from my lecture on Interval Scheduling. Here, I give the students about 5 minutes to come up with greedy metrics for the problem, and I suggest they try and "break" (come up with a counterexample) for any metrics they think of as well. Then, together as a class, I collect as many ideas as possible, and then see if anyone has counterexamples for those ideas, until the only one left is the earliest finish time.<br/><br/>
 
-<center><img src="images/interval-scheduling-lecture.png" width="700px" /> </center><br/><br/>
+<center><img src="images/interval-scheduling-lecture.png" width="700" alt="The interval scheduling worksheet filled in during lecture with the ideas the class suggested"> </center><br/><br/>
 
 This is a picture of my typed and filled-out "lecture notes" version that I post after class.<br/><br/>
 
-<center><img src="images/greedy-stays-ahead.png" width="700px" /> </center><br/><br/>
+<center><img src="images/greedy-stays-ahead.png" width="700" alt="The typed, filled-out lecture notes for the greedy-stays-ahead proof, posted after class"> </center><br/><br/>
 
 Here is an image of a part of the worksheet that I just lecture through.  I may take ideas from the class ("what proof idea should we use here?" or "what comes next in our induction proof?"), but I'm standing at the front of the class writing and explaining as you would on a board, as opposed to the portion where I'm running an in-class exercise. At some points of the class where they're more used to certain problems or proof techniques, I could imagine saying "take five minutes with the people around you and try to prove this," though, and then taking ideas from the class to put the proof together.<br/><br/>
 
@@ -129,9 +107,6 @@ To the best of my knowledge, at least four other instructors in my department ha
 <li>It forces one to think about the design of lectures and to make them more interactive during the design process.</li>
 </ul>
 
-
-
-
 <h3>Participation Cards</h3>
 
 This idea of participation cards was invented by my colleague who excels at all things pedagogy and has been a bit of a mentor to me, especially in motivating and managing TAs (another incredibly challenging new skill to learn as junior faculty!): <a href="https://www.bu.edu/cds-faculty/profile/klgold/">Kevin Gold</a>.<br/><br/>
@@ -144,7 +119,7 @@ The perks of this method are two-fold. First, introducing it on day one, it sets
 
 As I've said, this article on engaging a diverse classroom really inspired most of my teaching approaches. On the first day of class, I mention that we'll use hand raising and try to keep participation to an equitable level, in this way I am "explicit about promoting access and equity for all students." The hand raising works well, but obviously participation levels still vary.<br/><br/>
 
-<center><img src="images/class-ettiquette.png" width="700px" /> </center><br/><br/>
+<center><img src="images/class-ettiquette.png" width="700" alt="The class etiquette slide setting out hand-raising and participation norms"> </center><br/><br/>
 
 I do "learn or have access to students' names."  This is something I work very hard at.  I give the students a "Homework 0" on gradescope that is mostly just to help them understand what I expect them to know for the class, and it includes three additional questions: what is your name in the [university system], what is your preferred name, and upload a picture of yourself that actually looks like you. The whole Homework 0 is just for participation credit (it counts as an additional participation period). I then use these answers to make myself flashcards in Anki and regularly review and practice learning the students names. I don't have perfect recall, but I put enough time into it that it makes a difference in the classroom environment. The students have repeatedly told me how much they appreciate it. The tip to put a fixed amount of time into learning students names, in addition to the article, also came from Kevin Gold.<br/><br/>
 
@@ -154,7 +129,7 @@ Once more I draw on advice from Kevin Gold. When I began teaching, I crowdsource
 
 I now have a document for my course staff including the following things, all inspired by a presentation Kevin once gave us on managing TAs:<br/><br/>
 
-A paragraph describing and motivating what our class is and what our job as course staff is and why it's important (e.g., this is the class that turns them into algorithmic thinkers; if very important that we provide prompt feedback on their attempts to help them learn these skills!). 
+A paragraph describing and motivating what our class is and what our job as course staff is and why it's important (e.g., this is the class that turns them into algorithmic thinkers; if very important that we provide prompt feedback on their attempts to help them learn these skills!).
 The priorities I would like my course staff to use as they TA and grade (learning, equity, student well-being).
 The responsibilities (expectations) of my course staff in their various positions (course staff meetings, recitations, grading, office hours, and what these entail).
 The tools I use and for what (Piazza, Gradescope).
@@ -175,28 +150,23 @@ Regrades: I give 7 days for regrades, only through gradescope, and say a written
 
 <h3>A Big Open Question</h3>
 
-As LLMs get better and better and students rely on them more and more?to teach them the course material, to do their homework for them, to translate their homework from native languages, to translate from natural language to code or pseudocode or mark up?how do we continue to teach, incentivize, and evaluate our students?  This has been at the forefront of my experience this past year, as well as many colleagues', and our discussions.  For instance, we can't do something like make a students' grade 45% homework anymore in this environment. An <a href="https://hamsabastani.github.io/education_llm.pdf">interesting article</a> by <a href="https://hamsabastani.github.io/">Hamsa Bastani</a> and co-authors shows that reliance on chatGPT or even a chatGPT crafted tutor can wind up decreasing performance when the crutch is removed.  So what do we do?        
-          
-	
-	
+As LLMs get better and better and students rely on them more and more?to teach them the course material, to do their homework for them, to translate their homework from native languages, to translate from natural language to code or pseudocode or mark up?how do we continue to teach, incentivize, and evaluate our students?  This has been at the forefront of my experience this past year, as well as many colleagues', and our discussions.  For instance, we can't do something like make a students' grade 45% homework anymore in this environment. An <a href="https://hamsabastani.github.io/education_llm.pdf">interesting article</a> by <a href="https://hamsabastani.github.io/">Hamsa Bastani</a> and co-authors shows that reliance on chatGPT or even a chatGPT crafted tutor can wind up decreasing performance when the crutch is removed.  So what do we do?
+
 </p>
-        
+
         <p><a href="index.html">Blog home &raquo;</a></p>
-        
-
-
 
         <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    
+
     var disqus_config = function () {
-    this.page.url = interactive-classroom.html;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.url = "https://www.kiragoldner.com/blog/interactive-classroom.html";  // Replace PAGE_URL with your page's canonical URL variable
     this.page.identifier = 12; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    
+
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
     s.src = 'https://kiragoldner.disqus.com/embed.js';
@@ -206,26 +176,17 @@ As LLMs get better and better and students rely on them more and more?to teach t
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-                          
-                
-
-              </ul><br/><br/></li></ul>
-              
-            </ul> 
+              <br/><br/>
 
         </p>
- 
+
    </div></div>
 
     <div id="buffer"></div>
     <div id="footer">   <div>Created by Kira Goldner</div> </div>
-        
-       <div class="lightdark"><button class="colormode darktoggle" onclick="swapStyleSheet()"></button></div>
 
   </body>
 
 <!--google scholar: http://scholar.google.com/citations?user=3Gk0uc8AAAAJ-->
 
 </html>
-
-<script src="toggledark.js"></script>

@@ -1,64 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	
-	<title>
-		Kira Goldner | Research
-	</title>
-	
-	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" /> 
-	<link rel="icon" href="https://www.kiragoldner.com/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" id="theme" href="dark.css" />
-	<!-- <link rel="stylesheet" type="text/css" id="theme" href="darknew.css"> -->
-	
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K14LDEGDMS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="utf-8">
+    <title>Kira Goldner | Research</title>
+    <link rel="icon" href="/favicon.png">
+    <meta property="og:image" content="/favicon.png">
 
-  gtag('config', 'G-K14LDEGDMS');
-</script>	
-	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700|Roboto:400,500&amp;display=swap">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Sets the light/dark theme before the first paint: keep it here and keep it blocking. -->
+    <script src="/theme.js"></script>
+    <script src="/nav.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K14LDEGDMS"></script>
+    <script src="/analytics.js" defer></script>
 </head>
 
 <body>
 
-    <div class="nav">  
-                <div class="headname">Kira Goldner</div>    
-                <div class="off"><a href="index.html">About</a></div>        
-                <div class="on"><a href="research.html">Research</a></div>
-                <div class="off"><a href="teaching/index.html">Teaching</a></div> 
-                <div class="off"><a href="service.html">Service</a></div>              
-                <div class="off"><a href="resources.html">Resources</a></div>  
-                <div class="off"><a href="blog/index.html">Blog</a></div>                              
-                <div class="links">
-                        <a href="https://dblp.org/pers/g/Goldner:Kira.html"><img src="images/dblp-light.png" height="30px" /></a>
-                        <a href="https://bsky.app/profile/kiragoldner.bsky.social"><img src="images/bsky-light.png" height="30px" /></a>
-                        <a href="https://scholar.google.com/citations?user=3Gk0uc8AAAAJ&view_op=list_works&sortby=pubdate"> <img src="images/scholar-light.png" height="30px" /></a>
-                </div>
-    </div>
-
-    </div>
-    
-
-    
-</div>
+    <div id="navbar"></div>
 
 <div id="headpane">
     <div id="empty"></div>
 </div>
-    
+
 <div id="contentpane">
 
     <div id="content">
-    
+
     <h1>Survey Talks, Lecture Notes, and Other Resources </h1>
-    <hr class="head" />    
+    <hr class="head" />
 
     <b>Survey Talks:</b>
     <p><ul>
@@ -68,69 +43,65 @@
     <li>Interdimensional Mechanism Design: optimal mechanisms for settings at the sweet spot between single-parameter and heterogenous. [ <a href="https://youtu.be/g7OQKGsIyO8?t=3436" target="_blank">video</a> ]</li>
     </ul>
     </p>
-    
+
      <b>Tutorials:</b>
     <p><ul>
-    <li>An Overview of Using Mechanism Design for Social Good [ <a href="https://www.youtube.com/watch?v=rXlLH-wgOtY" target="_blank">video</a> | <a href="https://drive.google.com/file/d/13Taz-Bx6HM0c3jNMv54YhwfKt71z0lnW/view" target="_blank">slides</a> ] (TCS+ 2021) </li>     
+    <li>An Overview of Using Mechanism Design for Social Good [ <a href="https://www.youtube.com/watch?v=rXlLH-wgOtY" target="_blank">video</a> | <a href="https://drive.google.com/file/d/13Taz-Bx6HM0c3jNMv54YhwfKt71z0lnW/view" target="_blank">slides</a> ] (TCS+ 2021) </li>
     <li>The Menu Complexity of Multi-Item and Interdimensional Auctions [ <a href="https://www.youtube.com/watch?v=08B6H42bglw" target="_blank">part I video</a> | <a href="https://youtu.be/08B6H42bglw?t=6740" target="_blank">part II video</a> | <a href="http://yannai.gonch.name/scientific/ec18-menu-size-tutorial/tutorial-yannai-menu-size-multi-item-auctions.pdf" target="_blank">part I slides</a> | <a href="EC-Menu-Complexity-Space-Between-Tutorial.pdf" target="_blank">part II slides</a> | <a href="http://yannai.gonch.name/scientific/ec18-menu-size-tutorial/" target="_blank">website</a> ] (at EC 2018, Ithaca, NY.  Co-organized with <a href="http://yannai.gonch.name/scientific/" target="_blank">Yannai Gonczarowski</a>.)</li>
-    <li>Open Problems in Mechanism Design for Social Good [ <a href="https://www.youtube.com/watch?v=O85LGqm_dwU" target="_blank">video</a> | <a href="WINE%20Social%20Good%20Tutorial.pdf" target="_blank">slides</a> ] (at WINE 2017, Bangalore, India.) </li> 
+    <li>Open Problems in Mechanism Design for Social Good [ <a href="https://www.youtube.com/watch?v=O85LGqm_dwU" target="_blank">video</a> | <a href="WINE%20Social%20Good%20Tutorial.pdf" target="_blank">slides</a> ] (at WINE 2017, Bangalore, India.) </li>
     </ul>
     </p>
-    
+
     <b>Lecture Notes and Other Resources:</b>
     <p><ul>
-    <li>MD4SG 2016-18 reading list and lecture notes [ <a href="http://md4sg.com/researchgroup/index.html" target="_blank">website</a> ] (Co-organized with <a href="http://www.cs.cornell.edu/~red/" target="_blank">Rediet Abebe</a>.) </li> 
+    <li>MD4SG 2016-18 reading list and lecture notes [ <a href="http://md4sg.com/researchgroup/index.html" target="_blank">website</a> ] (Co-organized with <a href="http://www.cs.cornell.edu/~red/" target="_blank">Rediet Abebe</a>.) </li>
      <li>Article on MD4SG open problems and directions of interest to those in AI [ <a href="https://arxiv.org/abs/1810.09832" target="_blank">arXiv</a> ] (with <a href="http://www.cs.cornell.edu/~red/" target="_blank">Rediet Abebe</a>.) </li>    <a name="preprints"></a>
     <li> Many many more resources available on the <a href="http://md4sg.com/" target="_blank">MD4SG website</a>.</li>
     <a name="pubs"></a></ul>
-    </p>     <br/>    
-    
-    
-    
+    </p>     <br/>
+
     <!--h1>Preprints </h1>
     <hr class="head" />
- 
+
          <p><b>Multidimensional Bayesian Utility Maximization: Tight Approximations to Welfare</b> <br />
             &nbsp;&nbsp; with Taylor Lundy, NeurIPS 2025. [ <a href="https://arxiv.org/abs/2402.12340" target="_blank">paper</a> ] <br />
             &nbsp;&nbsp; <span class="attn">Spotlight Talk</span>
 
-                        
             <a name="pubs"></a><br /><br /></p-->   <!--%%%FIX PUB AND PREPRINT MARKER-->
-    
+
     <h1>Publications </h1>
     <hr class="head" />
-    
+
     <p><b>Knowing Who, Not How Much: Learning-Augmented Mechanisms for Consumer Utility Maximization</b> <br />
             &nbsp;&nbsp; with Divyarthi Mohan and Thodoris Tsilivis, ICML 2026. [ <a href="http://arxiv.org/abs/2607.00175" target="_blank">paper</a> ]
-            
+
             <br /><br /><b>From Welfare to Utility: Generalized Objectives in Budget-Feasible Procurement</b> <br />
             &nbsp;&nbsp; with Alon Eden, Eldar Kerner, and Thodoris Tsilivis, ICML 2026. [ <a href="http://arxiv.org/abs/2607.00101" target="_blank">paper</a> ]
-    
+
     <br /><br /><b>Multidimensional Bayesian Utility Maximization: Tight Approximations to Welfare</b> <br />
             &nbsp;&nbsp; with Taylor Lundy, NeurIPS 2025. [ <a href="https://arxiv.org/abs/2402.12340" target="_blank">paper</a>  | <a href="https://www.youtube.com/watch?v=sori35T9PSY" target="_blank">talk</a> ]  <br />
             &nbsp;&nbsp; <span class="attn">Selected for Spotlight Presentation (3.2% of all submissions)</span>
-            
-            
+
             <br /><br /><b>Bilateral Trade with Interdependent Values: Information vs. Approximation</b> <br />
             &nbsp;&nbsp; with Shahar Dobzinski, Alon Eden, Ariel Shaulker, and Thodoris Tsilivis, EC 2025. [ <a href="https://arxiv.org/pdf/2506.23896" target="_blank">paper</a> ]
 
         <br /><br /><b>To Regulate or Not to Regulate: Using Revenue Maximization Tools to Maximize Consumer Utility</b> <br />
             &nbsp;&nbsp; with Meryem Essaidi and S. Matthew Weinberg, SAGT 2024. [ <a href="https://arxiv.org/pdf/2002.06326.pdf" target="_blank">paper</a> | <a href="https://youtu.be/PvMns8jhhec" target="_blank">talk</a> ]      <!--<br />
             &nbsp;&nbsp; Previously appeared as ``When to Limit Market Entry under Mandatory Purchase'' in MD4SG 2019.-->
-        
+
         <br /><br /><b>Non-Adaptive Matroid Prophet Inequalities</b> <br />
-            &nbsp;&nbsp; with Shuchi Chawla, Anna R. Karlin, and J. Benjamin Miller, SAGT 2024. [ <a href="https://arxiv.org/pdf/2011.09406.pdf" target="_blank">paper</a> ] 
-        
+            &nbsp;&nbsp; with Shuchi Chawla, Anna R. Karlin, and J. Benjamin Miller, SAGT 2024. [ <a href="https://arxiv.org/pdf/2011.09406.pdf" target="_blank">paper</a> ]
+
         <br /><br /><b>A Constant Approximation for Private Interdependent Valuations</b> <br />
             &nbsp;&nbsp; with Alon Eden, Michal Feldman, Simon Mauras, and Divya Mohan, FOCS 2023. [ <a href="https://arxiv.org/pdf/2310.00958.pdf" target="_blank">paper</a> | <a href="https://player.vimeo.com/video/862408503" target="_blank">talk</a> ]<br />
             &nbsp;&nbsp; <span class="attn">Invited Presentation at Highlights Beyond EC 2024</span>
-            
+
             <br /><br /><b>Private Interdependent Valuations</b> <br />
             &nbsp;&nbsp; with Alon Eden and Shuran Zheng, SODA 2022. [ <a href="https://arxiv.org/pdf/2111.01851.pdf" target="_blank">paper</a> ]
-    
+
         <br /><br /><b>On Multi-Dimensional Gains from Trade Maximization</b> <br />
             &nbsp;&nbsp; with Yang Cai, Steven Ma, and Mingfei Zhao, SODA 2021. [ <a href="https://arxiv.org/pdf/2007.13934.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=3A7aIAqILO8&ab_channel=IsraeliAlgorithmicGameTheorySeminar" target="_blank">talk</a> ]
-    
+
         <br /><br /><b>Optimal Mechanism Design for Single-Minded Agents</b> <br />
             &nbsp;&nbsp; with Nikhil R. Devanur, Raghuvansh R. Saxena, Ariel Schvartzman, and S. Matthew Weinberg, EC 2020. [ <a href="https://arxiv.org/pdf/2002.06329.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=PflqwkyuorU" target="_blank">talk</a> ] <br/>
             &nbsp;&nbsp; <span class="attn">Awarded Best Presentation by a Student or Postdoctoral Researcher</span>
@@ -140,72 +111,64 @@
             &nbsp;&nbsp; also appeared in Tackling Climate Change with Machine Learning at NeurIPS 2019.
 
         <br /><br /><b>Bulow-Klemperer-Style Results for Welfare Maximization in Two-Sided Markets</b> <br />
-            &nbsp;&nbsp; with Moshe Babaioff and Yannai A. Gonczarowski, SODA 2020. [ <a href="https://arxiv.org/pdf/1903.06696.pdf" target="_blank">paper</a> | <a href="https://youtu.be/4XkLg0lTXGo" target="_blank">talk</a> ]      
-        
+            &nbsp;&nbsp; with Moshe Babaioff and Yannai A. Gonczarowski, SODA 2020. [ <a href="https://arxiv.org/pdf/1903.06696.pdf" target="_blank">paper</a> | <a href="https://youtu.be/4XkLg0lTXGo" target="_blank">talk</a> ]
+
         <br /><br /><b>Combinatorial Auctions with Interdependent Valuations: SOS to the Rescue</b> <br />
             &nbsp;&nbsp; with Alon Eden, Michal Feldman, Amos Fiat, and Anna R. Karlin, EC 2019. [ <a href="https://arxiv.org/pdf/1903.08384.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=Suv7H4rIAq8" target="_blank">co-author talk</a> ] <br/>
             &nbsp;&nbsp; <span class="attn">Awarded Best Paper with Student Lead Authors</span> <br/>
-            &nbsp;&nbsp; Journal version in Mathematics of Operations Research, May 2023. [ <a href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2023.1371" target="_blank">journal version</a> ]    
-        
+            &nbsp;&nbsp; Journal version in Mathematics of Operations Research, May 2023. [ <a href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2023.1371" target="_blank">journal version</a> ]
+
         <br /><br /><b>Simple and Approximately Optimal Pricing for Proportional Complementarities</b> <br />
-            &nbsp;&nbsp; with Yang Cai, Nikhil R. Devanur, and R. Preston McAfee, EC 2019. [ <a href="https://arxiv.org/pdf/1909.00788.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=5r9AYN-_I9I" target="_blank">talk</a> ]      
-	    
+            &nbsp;&nbsp; with Yang Cai, Nikhil R. Devanur, and R. Preston McAfee, EC 2019. [ <a href="https://arxiv.org/pdf/1909.00788.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=5r9AYN-_I9I" target="_blank">talk</a> ]
+
 	    <br /><br /><b>Interdependent Values without Single-Crossing</b> <br />
             &nbsp;&nbsp; with Alon Eden, Michal Feldman, and Amos Fiat, EC 2018. [ <a href="https://arxiv.org/pdf/1806.03865.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=2NdVBl4n8vo" target="_blank">co-author talk</a> ]
-            
+
             <br /><br /><b>Revenue Maximization with an Uncertainty-Averse Buyer</b> <br />
-            &nbsp;&nbsp; with Shuchi Chawla, J. Benjamin Miller, and Emmanouil Pountourakis, SODA 2018. [ <a href="https://arxiv.org/pdf/1703.08607.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=FWYBz0jLyGs" target="_blank">co-author talk</a> ]            
-            
+            &nbsp;&nbsp; with Shuchi Chawla, J. Benjamin Miller, and Emmanouil Pountourakis, SODA 2018. [ <a href="https://arxiv.org/pdf/1703.08607.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=FWYBz0jLyGs" target="_blank">co-author talk</a> ]
+
             <br /><br /><b>A Prior-Independent Revenue-Maximizing Auction for Multiple Additive Bidders</b> <br />
             &nbsp;&nbsp; with Anna R. Karlin, WINE 2016. [ <a href="papers/additivepriorindependent.pdf" target="_blank">paper</a> ]
-            
+
             <br /><br /><b>The FedEx Problem</b><br />
             &nbsp;&nbsp; with Amos Fiat, Anna R. Karlin, and Elias Koutsoupias, EC 2016. [ <a href="papers/fedex.pdf" target="_blank">paper</a> | <a href="https://www.youtube.com/watch?v=ROF9g9ng1BY" target="_blank">talk</a> ]
 
             <br /><br /><b>Minimal Partial Languages and Automata</b> <br />
             &nbsp;&nbsp; with F. Blanchet-Sadri and Aidan Shackleton, CIAA 2014. [ <a href="http://www.uncg.edu/cmp/research/planguages2/CIAA2014_Blanchet-Sadri_Goldner_Shackleton.pdf" target="_blank">paper</a> ] <br/>
-            &nbsp;&nbsp; Journal version in RAIRO-Theoretical Informatics and Applications, 2017. [ <a href="https://www.rairo-ita.org/articles/ita/abs/2017/02/ita170048/ita170048.html" target="_blank">journal version</a> ]    
+            &nbsp;&nbsp; Journal version in RAIRO-Theoretical Informatics and Applications, 2017. [ <a href="https://www.rairo-ita.org/articles/ita/abs/2017/02/ita170048/ita170048.html" target="_blank">journal version</a> ]
 
         <!--br /><br /><b>Different Optimal Solutions in Shared Path Graphs</b> <br />
         &nbsp;&nbsp; With Sean McCulloch, MCURCSM 2012. [ <a href="papers/sharedpathgraphs.pdf" target="_blank">paper</a> ]-->
 
             <br /><br /></p>
-            
+
             <h1>Dissertation</h1>
             <hr class="head" />
 
-	    <b>Mechanism Design for a Complex World: Rethinking Standard Assumptions</b> <br /> 
-	    &nbsp;&nbsp; PhD Thesis, University of Washington, June 2019. [ <a href="thesis.pdf" target="_blank">thesis</a> ]   
-	    
+	    <b>Mechanism Design for a Complex World: Rethinking Standard Assumptions</b> <br />
+	    &nbsp;&nbsp; PhD Thesis, University of Washington, June 2019. [ <a href="thesis.pdf" target="_blank">thesis</a> ]
+
 	    <br /><br/></p>
-            
-            
+
             <h1>Bulletins</h1>
-            <hr class="head" />         
+            <hr class="head" />
 
-            <b>A Report on YoungEC '19</b> <br /> 
-	    &nbsp;&nbsp; ACM SIGecom Exchanges, 18.1, July 2020. [ <a href="http://www.sigecom.org/exchanges/volume_18/1/GOLDNER.pdf" target="_blank">paper</a> ]         
-            
-        <br /><br /><b>Mechanism Design for Social Good</b> <br /> 
-	    &nbsp;&nbsp; with Rediet Abebe,  ACM SIGAI AI Matters, 4.3, October 2018. [ <a href="http://sigai.acm.org/static/aimatters/4-3/AIMatters-4-3-10-Abebe.pdf" target="_blank">paper</a> ]           
-            
-            <br /><br /><b>A Report on the Workshop on Mechanism Design for Social Good</b> <br /> 
-	    &nbsp;&nbsp; with Rediet Abebe,  ACM SIGecom Exchanges, 16.2, June 2018. [ <a href="http://www.sigecom.org/exchanges/volume_16/2/ABEBE.pdf" target="_blank">paper</a> ]              
+            <b>A Report on YoungEC '19</b> <br />
+	    &nbsp;&nbsp; ACM SIGecom Exchanges, 18.1, July 2020. [ <a href="http://www.sigecom.org/exchanges/volume_18/1/GOLDNER.pdf" target="_blank">paper</a> ]
 
+        <br /><br /><b>Mechanism Design for Social Good</b> <br />
+	    &nbsp;&nbsp; with Rediet Abebe,  ACM SIGAI AI Matters, 4.3, October 2018. [ <a href="http://sigai.acm.org/static/aimatters/4-3/AIMatters-4-3-10-Abebe.pdf" target="_blank">paper</a> ]
 
+            <br /><br /><b>A Report on the Workshop on Mechanism Design for Social Good</b> <br />
+	    &nbsp;&nbsp; with Rediet Abebe,  ACM SIGecom Exchanges, 16.2, June 2018. [ <a href="http://www.sigecom.org/exchanges/volume_16/2/ABEBE.pdf" target="_blank">paper</a> ]
 
     </div></div>
 
-    
     <div id="buffer"></div>
     <div id="footer">   <div>Created by Kira Goldner | Updated July 2026</div> </div>
-        
-       <div class="lightdark"><button class="colormode darktoggle" onclick="swapStyleSheet()"></button></div>        
 
   </body>
 
 <!--google scholar: http://scholar.google.com/citations?user=3Gk0uc8AAAAJ-->
 
 </html>
-
-<script src="toggledark.js"></script>

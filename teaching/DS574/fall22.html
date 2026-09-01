@@ -1,46 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	
-	<title>
-		Kira Goldner | DS 574 Fall '22
-	</title>
-	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" /> 
-	<link rel="icon" href="https://www.kiragoldner.com/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" id="theme" href="dark.css" />
-	
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K14LDEGDMS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="utf-8">
+    <title>Kira Goldner | DS 574 Fall '22</title>
+    <link rel="icon" href="/favicon.png">
+    <meta property="og:image" content="/favicon.png">
 
-  gtag('config', 'G-K14LDEGDMS');
-</script>	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700|Roboto:400,500&amp;display=swap">
+    <link rel="stylesheet" href="/styles.css">
 
+    <!-- Sets the light/dark theme before the first paint: keep it here and keep it blocking. -->
+    <script src="/theme.js"></script>
+    <script src="/nav.js" defer></script>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K14LDEGDMS"></script>
+    <script src="/analytics.js" defer></script>
 </head>
 
-<body>
+<body class="narrow-title">
 
-    <div class="nav">  
-                <div class="headname">Kira Goldner</div>    
-                <div class="off"><a href="../../index.html">About</a></div>        
-                <div class="off"><a href="../../research.html">Research</a></div>
-                <div class="on"><a href="../index.html">Teaching</a></div> 
-                <div class="off"><a href="../../service.html">Service</a></div>                   
-                <div class="off"><a href="../../resources.html">Resources</a></div>
-                <div class="off"><a href="../../blog/index.html">Blog</a></div>                
-                <div class="links">
-                        <a href="https://dblp.org/pers/g/Goldner:Kira.html"><img src="../../images/dblp-light.png" height="30px" /></a>
-                        <a href="https://bsky.app/profile/kiragoldner.bsky.social"><img src="../../images/bsky-light.png" height="30px" /></a>
-                        <a href="https://scholar.google.com/citations?user=3Gk0uc8AAAAJ&view_op=list_works&sortby=pubdate"> <img src="../../images/scholar-light.png" height="30px" /></a>
-                </div>       
-    </div>
+    <div id="navbar"></div>
 
 <div id="headpane">
 	<br/><br/>
@@ -49,61 +31,54 @@
         <div id="name" style="margin-left: -30px; width: 750px;"><p class="job" style="font-size: 130%;">DS 574: Algorithmic Mechanism Design<br/>
     Fall 2022<br/>
     Boston University</p>
-    
+
         </div>
     </div>
-    
-    
 
-    
 </div>
-    
+
 <div id="contentpane">
-    
+
     <div id="content">
 
 <hr class="divider" />
       <h3>Course Details</h3>
-      
+
     <p><b>Instructor:</b> Professor <a href="../" target="_blank">Kira Goldner</a> (goldner@). <br/>
     Office Hours: Tuesday 5&ndash;6pm and by appointment. <br/>
     Office Location: 111 Cummington Mall, 138P. </p>
-    
+
     <p><b>Teaching Fellow:</b> Peiran Xiao (pxiao@). <br/>
     Office Hours: Wednesday 2:30&ndash;3:30pm and by appointment.<br />
     OH Location: 111 Cummington Mall, 141.</p>
-        
+
     <p><b>Lectures:</b> <br/>
     Tuesday/Thursday 3:30&mdash;4:45pm, <a href="https://goo.gl/maps/H5k1wovLoKcMjoZo7">CAS</a> 426. </p>
-    
 
-    
-    <p><b>Important Links:</b> 
+    <p><b>Important Links:</b>
     <ul>
         <li>Course Policies: <a href="fall22/DS574-syllabus-22.pdf" target="_blank">Syllabus</a></li>
         <li>For communication: <a href="https://piazza.com/class/l6wc8oia3oj6g6" target="_blank">Piazza</a> access code AMD</li>
         <li>For submitting homework: <a href="https://www.gradescope.com/courses/419257" target="_blank">Gradescope</a> course entry code DJP34R</li>
         <!--li>What to expect from this course: <a href="FAQ574.pdf" target="_blank">FAQ</a></li-->
     </ul>
-    
+
     <!--p><b>Piazza:</b> <a href="http://piazza.com/bu/spring2022/ds320/home" target="_blank">http://piazza.com/bu/spring2022/ds320/home</a>. </p>
-    
+
     <p><b>Course Policy:</b> <a href="" target="_blank">DS 320 Course Policies</a>.</p-->
-    
+
     <p><b>Course Description:</b> This course is an introduction to the interdisciplinary area of Algorithmic Mechanism Design: where computational perspectives are applied to economic problems, and economic techniques are brought to problems from computer science.  We will explore a broad range of topics at the frontier of new research, starting with some of the fundamentals, such as welfare-maximizing auctions and types of Nash Equilibria.  Throughout the semester, the class will also learn about prevalent topics such as (1) Data Science & Incentives, (2) Mechanism Design for Social Good, and (3) optimization and robustness in mechanism design.<br/><br/>
-    
+
     The course is aimed at graduate students but will be accessible to motivated advanced undergraduate or masters students with some background in proofs (DS 122), algorithms (DS 320), and probability (MA 581).
     </p>
-    
+
     <p><b>Homework:</b> Biweekly homeworks will be posted on Piazza when they become available. Homework must be typed up using LaTeX; <a href="fall22/latex.pdf" target="_blank">here</a> is a quick resource on LaTeX and <a href="fall22/latextemplate.tex" target="_blank">here</a> is a LaTeX template you may use for the homework.  <a href="https://www.tug.org/begin.html" target="_blank">Here</a> is another short guide to LaTeX. You may find it easier to use <a href="https://www.overleaf.com/" target="_blank">Overleaf</a>.</p>
-    
-    
 
 <hr class="divider" />
 
 <!--div>
       <h4>Announcements</h4>
-      
+
       <p>Updates will be posted here.</p>
 </div>
 
@@ -141,7 +116,7 @@
     <br/><br/></p-->
 
 Resources listed are optional, and often multiple versions of the same material are listed so that you can find what is best suited to you.<br />
-      
+
       <p>
       <table class="rg" style="margin-left:auto; margin-right:auto;">
       <tr>
@@ -158,7 +133,7 @@ Resources listed are optional, and often multiple versions of the same material 
         <td>Sep 8</td>
         <td>Incentive Compatibility</td>
         <td><a href="fall22/L2-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L2.pdf" target="_blank">Notes</a>, R1.3</td>
-      </tr>      
+      </tr>
       <tr>
         <td>Sep 13</td>
         <td>The Revelation Principle</td>
@@ -198,119 +173,110 @@ Resources listed are optional, and often multiple versions of the same material 
         <td>Oct 6</td>
         <td>Recap and Big Picture</td>
         <td><a href="fall22/L10-slides.pptx" target="_blank">Slides (pptx)</a>, <a href="fall22/L10-slides.pdf" target="_blank">Slides (pdf)</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Oct 11</td>
         <td>NO CLASS (Monday schedule)</td>
         <td><a href="" target="_blank"></a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Oct 13</td>
         <td>LP Duality II: Strong Duality, Complementary Slackness, Welfare</td>
         <td><a href="fall22/L11-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L11.pdf" target="_blank">Notes</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Oct 18</td>
         <td>LP Duality III: Lagrangian Duality</td>
         <td><a href="fall22/L12-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L12.pdf" target="_blank">Notes</a>, <a href="https://arxiv.org/abs/1812.01577" target="_blank">CDW STOC '16</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Oct 20</td>
         <td>LP Duality IV: Algorithmic Rev Max (<a href="https://www.cs.princeton.edu/~smattw/" target="_blank">Matt Weinberg</a>)</td>
         <td><a href="https://arxiv.org/abs/1207.5518" target="_blank">CDW FOCS '12</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Oct 25</td>
         <td>LP Duality V: Approximate Revenue Maximization</td>
         <td><a href="fall22/L14-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L14.pdf" target="_blank">Notes</a>, <a href="https://arxiv.org/abs/1812.01577" target="_blank">CDW STOC '16</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Oct 27</td>
         <td>Projects &amp; Prophet Inequalities</td>
         <td><a href="fall22/L15-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L15.pdf" target="_blank">Notes</a>, <a href="fall22/Project-Description.pdf" target="_blank">Projects</a>, R1.6</td>
-      </tr>      
+      </tr>
         <td>Nov 1</td>
         <td>Prior Independence: Bulow-Klemperer &amp; Single Sample</td>
         <td><a href="fall22/L16-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L16.pdf" target="_blank">Notes</a>, R1.6, H5.2-3</td>
-      </tr>      
+      </tr>
       <tr>
         <td>Nov 3</td>
         <td>Gains from Trade in Two-Sided Markets</td>
         <td><a href="fall22/L17-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L17.pdf" target="_blank">Notes</a>, <a href="https://arxiv.org/pdf/1903.06696.pdf" target="_blank">BGG '20</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Nov 8</td>
         <td>Mechanism Design for Social Good: Health Insurance Markets</td>
         <td><a href="fall22/L18-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L18.pdf" target="_blank">Notes</a>, <a href="https://arxiv.org/pdf/2002.06326.pdf" target="_blank">EGW '20</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Nov 10</td>
         <td>Mechanism Design for Social Good: Kidney Exchange (class canceled)</td>
         <td><a href="https://www.youtube.com/watch?v=NT07sILhsv4" target="_blank">R1.10 Video</a>, <a href="https://timroughgarden.org/f13/l/l10.pdf" target="_blank">R1.10 Notes</a>, <a href="https://www.youtube.com/watch?v=exB1O3pTf7E" target="_blank">Al Roth's talk</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Nov 15</td>
         <td>Mechanism Design for Social Good: COVID Testing and the Research-to-Practice Pipeline (<a href="https://www.fmarmolejo.com/" target="_blank">Francisco J. Marmolejo Coss&iacute;o</a>)</td>
         <td><a href="https://dl.acm.org/doi/10.1145/3465416.3483300" target="_blank">LMCJRGGBVTAL '21</a>, <a href="https://arxiv.org/abs/2206.10660" target="_blank">LMCMP '22</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Nov 17</td>
         <td>Interdependent Values I</td>
         <td><a href="fall22/L21-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L21.pdf" target="_blank">Notes</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Nov 22</td>
         <td>Interdependent Values II</td>
         <td><a href="fall22/L22.pdf" target="_blank">Notes</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Nov 24</td>
         <td>NO CLASS (Thanksgiving)</td>
         <td></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Nov 29</td>
         <td>Selling Separately or Bundling</td>
         <td><a href="fall22/L23-worksheet.pdf" target="_blank">Worksheet</a>, <a href="fall22/L23.pdf" target="_blank">Notes</a>, R2.18, <a href="https://arxiv.org/abs/1405.6146" target="_blank">BILW '14</a>, <a href="https://arxiv.org/abs/1812.01577" target="_blank">CDW '16</a></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Dec 1</td>
         <td>Carbon Auctions</td>
         <td></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Dec 6</td>
         <td>Project Presentations</td>
         <td></td>
-      </tr>      
+      </tr>
       <tr>
         <td>Dec 8</td>
         <td>Project Presentations</td>
         <td></td>
-      </tr>                                                                                                                                          
+      </tr>
       </table>
-      
+
       <br/><br/><br/>Huge gratitude to Jason Hartline and Tim Roughgarden for their publicly available materials which have made the development of this course possible.
       </p>
 
 </div>
 
-   
-
-
     </div>
-
 
 </div>
 
     <div id="buffer"></div>
     <div id="footer">   <div>Created by Kira Goldner | Updated November 2022</div> </div>
-    
-           <div class="lightdark"><button class="colormode darktoggle" onclick="swapStyleSheet()"></button></div>
 
   </body>
 
-
 </html>
-
-<script src="toggledark.js"></script>

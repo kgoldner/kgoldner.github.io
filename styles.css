@@ -1,0 +1,559 @@
+/* =============================================================================
+   kiragoldner.com
+
+   One stylesheet for the whole site. Light and dark are the same rules with a
+   different set of colour tokens; nothing below hard-codes a themed colour.
+
+   Dark mode is applied by setting data-theme="dark" on <html>, which theme.js
+   does before the first paint. The media query below is the no-JS fallback.
+   ============================================================================= */
+
+:root {
+    --bg: #f2ece9;
+    --text: #404040;
+    --accent: #F2B303;    /* alternatives tried: #F8BF01, #FFCC00 */
+    --link: #0b7fab;      /* alternatives tried: purple #5b198f, blue #3d50bb */
+    --attn: #cc1414;
+    --rule: #7f7f7f;
+
+    /* Reversed-out blocks: the nav bar, .title, .project, .left. */
+    --chip-bg: #000000;
+    --nav-bg: #222222;
+    --chip-text: #f2ece9;
+
+    --toggle-icon: url("/images/light-dark.png");
+
+    /* The blog and course pages set a narrower title block (see body.narrow-title). */
+    --pagetitle-width: 780px;
+}
+
+:root[data-theme="dark"] {
+    --bg: #121212;        /* alternatives tried: #0f0f0f, #404040, #18191b */
+    --text: #f1e4de;
+    --attn: #de2f2f;
+    --chip-text: #f1e4de;
+    --toggle-icon: url("/images/dark-light.png");
+}
+
+/* Visitors who have never used the toggle, with JavaScript off. */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg: #121212;
+        --text: #f1e4de;
+        --attn: #de2f2f;
+        --chip-text: #f1e4de;
+        --toggle-icon: url("/images/dark-light.png");
+    }
+}
+
+body {
+    background-color: var(--bg);
+}
+
+body.narrow-title {
+    --pagetitle-width: 700px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Page frame
+   -------------------------------------------------------------------------- */
+
+div#headpane {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    color: var(--accent);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    height: auto;
+    width: 950px;
+}
+
+div#contentpane {
+    position: relative;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    color: var(--text);
+    font-family: 'Titillium Web', Arial, sans-serif;
+    font-size: 120%;
+    width: 85%;
+    background-color: var(--bg);
+    clear: both;
+    line-height: 150%;
+    z-index: 1;
+}
+
+div#pagetitle {
+    font-size: 180%;
+    text-align: left;
+    font-family: 'Titillium Web', Optima, Verdana, sans-serif;
+    margin: 3% auto;
+    width: var(--pagetitle-width);
+}
+
+div#content {
+    position: relative;
+    top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#buffer {
+    width: 100%;
+    height: 140px;
+    z-index: 0;
+}
+
+#empty {
+    width: 100%;
+    height: 70px;
+    z-index: 0;
+}
+
+#footer {
+    margin: 30px 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    z-index: 0;
+    font-family: 'Titillium Web', Arial, sans-serif;
+    font-size: 115%;
+    float: left;
+    width: 100%;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#footer .side, #footer .middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer .side {
+    margin: 0px;
+    width: 100px;
+}
+
+#footer .middle {
+    margin: 0px;
+    width: 60%;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Navigation bar (injected from navbar.html by nav.js)
+   -------------------------------------------------------------------------- */
+
+.nav {
+    width: 100%;
+    background-color: var(--nav-bg);
+    border-color: var(--nav-bg);
+    color: var(--chip-text);
+    margin-left: -8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 140%;
+    /* Pinned explicitly. This used to rely on margin-top:-40px cancelling the
+       40px top margin that #headpane collapses through the empty #navbar, which
+       left the bar half off-screen on any page without a #headpane. */
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 58px;
+}
+
+.nav div {
+    padding: 0px 5px;
+}
+
+.nav a {
+    color: var(--chip-text);
+}
+
+.nav a:hover {
+    color: var(--accent);
+}
+
+.headname {
+    font-family: 'Titillium Web', Optima, Verdana, sans-serif;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 170%;
+}
+
+.navbar {
+    margin: 0px auto;
+}
+
+/* The current section. */
+.on {
+    font-weight: bold;
+    color: var(--chip-text);
+}
+
+.lightdark {
+    position: fixed;
+    right: 37px;
+    top: 88px;
+    z-index: 2;
+}
+
+.darktoggle {
+    color: var(--chip-text);
+    border: none;
+    border-color: var(--nav-bg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    background: var(--toggle-icon) no-repeat center center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.darktoggle:hover {
+    color: var(--accent);
+}
+
+
+/* -----------------------------------------------------------------------------
+   Headers, rules and body text
+   -------------------------------------------------------------------------- */
+
+h1 {
+    color: var(--text);
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0% 0% 1% 0%;
+}
+
+h1 > a, h1 > a:hover {
+    color: var(--text);
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--text);
+    font-family: 'Titillium Web', sans-serif;
+    margin: -1% 0%;
+    font-size: 180%;
+}
+
+p {
+    height: auto;
+    margin: 0;
+}
+
+#content p {
+    margin-bottom: 1em;
+}
+
+hr {
+    color: var(--rule);
+}
+
+.head {
+    height: 3px;
+    border: var(--text);
+    background-color: var(--text);
+    margin-bottom: 20px;
+}
+
+.bar {
+    height: 1px;
+    border: var(--text);
+    background-color: var(--text);
+    margin-bottom: 20px;
+}
+
+.projectTitle {
+    height: 5px;
+    color: var(--accent);
+    background-color: var(--accent);
+    margin-bottom: 20px;
+    border: 1px solid var(--accent);
+}
+
+.section {
+    font-weight: bold;
+    font-size: large;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: -10px;
+}
+
+.news {
+    font-weight: 700;
+    font-size: 125%;
+}
+
+.attn {
+    font-weight: bold;
+    color: var(--attn);
+}
+
+.break {
+    color: #B4B4B4;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+#footer a:hover, #contentpane a:hover {
+    color: var(--accent);
+}
+
+a.pdf {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a.pdf:hover {
+    text-decoration: underline;
+}
+
+.link {
+    color: var(--accent);
+    text-align: center;
+    float: right;
+}
+
+.link a {
+    font-weight: normal;
+    text-decoration: underline;
+    color: var(--chip-bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+.link a:hover {
+    color: var(--accent);
+}
+
+
+/* -----------------------------------------------------------------------------
+   Masthead: photo, name, contact details
+   -------------------------------------------------------------------------- */
+
+#headerimg {
+    margin-right: 30px;
+    border: 2px solid var(--bg);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#name {
+    display: inline-block;
+    width: 535px;
+    vertical-align: top;
+}
+
+.myname {
+    font-size: 300%;
+    margin-top: -8%;
+    margin-bottom: -5%;
+    text-align: center;
+}
+
+.job {
+    font-size: 90%;
+    text-align: center;
+    color: var(--text);
+    line-height: 100%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.email {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    font-size: 65%;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 15px;
+}
+
+#contact {
+    display: inline-block;
+    width: 300px;
+    margin-left: 40px;
+    vertical-align: top;
+    margin-top: 65px;
+}
+
+#logo {
+    height: 19pt;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Research listings
+   -------------------------------------------------------------------------- */
+
+.project {
+    font-size: 175%;
+    font-weight: bold;
+    font-family: 'Titillium Web', Arial, sans-serif;
+    background-color: var(--chip-bg);
+    color: var(--accent);
+    padding: 5px;
+}
+
+.title {
+    background-color: var(--chip-bg);
+    color: var(--chip-text);
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+
+.abstract {
+    float: left;
+    margin-top: -1%;
+}
+
+.researchimg {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    clear: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.researchimg > img {
+    vertical-align: middle;
+}
+
+.descript {
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
+}
+
+.interests {
+    margin-top: 0%;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Tables (course schedules, reading groups)
+   -------------------------------------------------------------------------- */
+
+.rg {
+    border-collapse: collapse;
+    text-align: left;
+    vertical-align: top;
+    width: 870px;
+}
+
+.rg table, .rg th, .rg td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding: 5px 10px;
+}
+
+.module tr, .module td, .module th {
+    border-bottom: 4px double black;
+    font-size: 120%;
+}
+
+.last tr, .last td {
+    border-bottom: 2px solid black;
+}
+
+table ol {
+    margin: 0%;
+    margin-left: -1.3em;
+}
+
+/* Conference schedule rows (blog/boston-eaamo-21-meet-up.html). */
+.session {
+    font-size: 80%;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Utilities
+   -------------------------------------------------------------------------- */
+
+.left {
+    text-align: right;
+    float: right;
+    margin-top: .5%;
+    margin-bottom: 1%;
+    font-size: 75%;
+    font-family: 'Titillium Web', Arial, sans-serif;
+    background-color: var(--chip-bg);
+    color: var(--chip-text);
+    line-height: 95%;
+}
+
+span.left2 {
+    text-align: right;
+    float: right;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-size: 75%;
+}
+
+span.project2 {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.center {
+    text-align: center;
+}
+
+.border {
+    border: 3pt solid var(--chip-bg);
+}
+
+.r {
+    float: right;
+}
+
+.l {
+    float: left;
+}
+
+.nospace {
+    margin-top: 0px;
+}

@@ -1,47 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	
-	<title>
-		Every Academic Needs a Website
-	</title>
-	
-	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" /> 
-	<link rel="icon" href="https://www.kiragoldner.com/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" id="theme" href="dark.css" />
-	<!-- <link rel="stylesheet" type="text/css" id="theme" href="darknew.css"> -->
-	
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K14LDEGDMS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="utf-8">
+    <title>Every Academic Needs a Website</title>
+    <link rel="icon" href="/favicon.png">
+    <meta property="og:image" content="/favicon.png">
 
-  gtag('config', 'G-K14LDEGDMS');
-</script>	
-	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700|Roboto:400,500&amp;display=swap">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Sets the light/dark theme before the first paint: keep it here and keep it blocking. -->
+    <script src="/theme.js"></script>
+    <script src="/nav.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K14LDEGDMS"></script>
+    <script src="/analytics.js" defer></script>
 </head>
 
-<body>
+<body class="narrow-title">
 
-    <div class="nav">  
-                <div class="headname">Kira Goldner</div>    
-                <div class="off"><a href="../index.html">About</a></div>        
-                <div class="off"><a href="../research.html">Research</a></div>
-                <div class="off"><a href="../teaching/index.html">Teaching</a></div> 
-                <div class="off"><a href="../service.html">Service</a></div>                   
-                <div class="off"><a href="../resources.html">Resources</a></div>
-                <div class="on"><a href="index.html">Blog</a></div>                
-                <div class="links">
-                        <a href="https://dblp.org/pers/g/Goldner:Kira.html"><img src="../images/dblp-light.png" height="30px" /></a>
-                        <a href="https://bsky.app/profile/kiragoldner.bsky.social"><img src="../images/bsky-light.png" height="30px" /></a>
-                        <a href="https://scholar.google.com/citations?user=3Gk0uc8AAAAJ&view_op=list_works&sortby=pubdate"> <img src="../images/scholar-light.png" height="30px" /></a>
-                </div>      
-    </div>
+    <div id="navbar"></div>
 
 <div id="headpane">
 	<br/><br/>
@@ -50,22 +31,19 @@
         <div id="name" style="margin-left: -30px; width: 750px;"><p class="myname">The Strategy Space</p>
         </div>
     </div>
-    
 
-    
 </div>
-    
+
 <div id="contentpane">
-    
+
     <div id="content">
-    
-    
+
     <hr class="head" />
                 <span  style="float: right;"><a href="index.html">Blog home &raquo;</a></span>
 
     <h1>Every Academic Needs a Website</h1>
     <p style="font-size: 80%;">July 26, 2022</p>   <a href="https://onak.pl/" target="_blank"> </a>
-    
+
         <p>As I wrote in a twitter thread last week: "If you're an academic without a website, you don't exist. Doesn't matter if you haven't published yet, put up a website with your name, affiliation, EMAIL, advisor, research interests, and photo. Otherwise you can't be found." Today, I'll elaborate. <br/><br/>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">It&#39;s been a few months so I&#39;ll say it again: If you&#39;re an academic without a website, you don&#39;t exist.<br><br>Doesn&#39;t matter if you haven&#39;t published yet, put up a website with your name, affiliation, EMAIL, advisor, research interests, and photo. Otherwise you can&#39;t be found.</p>&mdash; Kira Goldner (@kiragoldner) <a href="https://twitter.com/kiragoldner/status/1548778496259923971?ref_src=twsrc%5Etfw">July 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -95,21 +73,21 @@ Some options for "what-you-see-is-what-you-get":
           <li><a href="https://sites.google.com/new">Google Sites</a></li>
           <li><a href="https://wordpress.com/">Wordpress</a></li>
           <li><a href="https://www.wix.com/">Wix</a></li>
-</ul>   
+</ul>
 
 <h3>Using Mark-Up</h3>
 
 If you're working from the basic mark-up languages like html and css, a website is just a collection of files that are marked up with style (think LaTeX) and link to one another.  Starting from templates, of which plenty exist, all you have to do is replace the text part and leave the style/markup alone until you feel ready to play with it, and then take the collection of files and find somewhere to host it. <br/><br/>
 
 You can easily find templates online (by googling) to start from.  However, one thing to remember is that web design is non-trivial work; <span class="attn">please never just take the code from someone's website without asking!</span>  <br/><br/>
-    
+
     I built the following templates for a variety of academic uses, and <b>I offer with my permission for anyone to use</b> (with credit, already embedded):<ul>
     <li>Single page site: good for a personal webpage or a simple reading group [ <a href="../singlepage-template/index.html" target="_blank">demo</a> | <a href="../singlepage-template/singlepage-template.zip" target="_blank">download</a> ]</li>
     <li>Multi-page site: good for a personal webpage with a lot of information, a seminar, etc. [ <a href="../multipage-template/index.html" target="_blank">demo</a> | <a href="../multipage-template/multipage-template.zip" target="_blank">download</a> ]</li>
-    <li>Conference site: good for a conference, workshop, seminar; has multiple pages; header always visible [ <a href="../conference-template/index.html" target="_blank">demo</a> | <a href="../conference-template/conference-template.zip" target="_blank">download</a> ]</li>  
-    <li>Course site: good for running a class [ <a href="../course-template/index.html" target="_blank">demo</a> | <a href="../course-template/course-template.zip" target="_blank">download</a> ]</li>        
+    <li>Conference site: good for a conference, workshop, seminar; has multiple pages; header always visible [ <a href="../conference-template/index.html" target="_blank">demo</a> | <a href="../conference-template/conference-template.zip" target="_blank">download</a> ]</li>
+    <li>Course site: good for running a class [ <a href="../course-template/index.html" target="_blank">demo</a> | <a href="../course-template/course-template.zip" target="_blank">download</a> ]</li>
     </ul>
-    
+
 Once you've created a website, your collection of files, you need a place to host it. <br/><br/>
 
 Some options for basic html:
@@ -117,7 +95,7 @@ Some options for basic html:
           <li>Website from your affiliation</li>
           <li><a href="https://docs.github.com/en/pages">Github pages</a></li>
           <li>Own domain</li>
-</ul>   
+</ul>
 
 Especially in a computer science department, it's very likely that your affiliation offers you a website for free.  You generally just need to find out where the right place to store files is, then <a href="https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files">ssh and secure copy</a> your files there (I googled "scp command") and make them <a href="https://www.internalpointers.com/post/right-folder-permission-website">readable</a> (I googled "file permissions website").  However, then you have to move your website every time you change affiliations. <br/><br/>
 
@@ -130,7 +108,7 @@ For those who can push and pull on git (don't even have to understand branching!
 You would wind up with a url like <a href="https://kgoldner.github.io">kgoldner.github.io</a>
 If you want to be fancy, you can buy your own domain name.  For example, when I became a postdoc, I bought "<a href="https://www.kiragoldner.com">www.kiragoldner.com</a>" through <a href="https://domains.google/">Google Domains</a> for $12 per year.  This website is actually just using my google domain name to host the github page.  Github pages walks  through connecting the two, but you essentially reroute the github page to be located at the google domain through the DNS page on google domains.<br/><br/>
 
-<img src="images/DNS.png" width="700px"> <br/><br/>
+<img src="images/DNS.png" width="700" alt="The DNS settings page used to point a Google domain at a GitHub Pages site"> <br/><br/>
 
 And to respond to those of you asking "why NOT LinkedIn or Google Scholar or DBLP?" <br/><br/>
 
@@ -144,7 +122,7 @@ In conclusion:
 <li>Don't be afraid to poke an older student and ask them who they contacted to get access to hosting their university website.</li>
 <li>Don't be afraid to poke your university group and insist that they buff up their website so that it actually points to the current members (and maybe has photos!).</li>
 <li>This isn't about self-promotion. It's about connecting our research communities so we can continue to collaborate on research and join each other at events.</li>
-</ul>       
+
 <br/>
 P.S. Did the information in this post feel accessible? Perhaps because I linked to websites throughout!  They're so useful!<br/><br/>
 EDIT: Here's a wonderful tutorial on hosting by <a href="https://sandeepsilwal.com/" target="_blank">Sandeep Silwal</a>:<br/><br/>
@@ -164,25 +142,21 @@ Own Domain:
 <li>This will help you link your custom domain name to your github website.</li>
 </ul>
 
-        
 </p>
-        
+
         <p><a href="index.html">Blog home &raquo;</a></p>
-        
-
-
 
         <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    
+
     var disqus_config = function () {
-    this.page.url = websites.html;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.url = "https://www.kiragoldner.com/blog/websites.html";  // Replace PAGE_URL with your page's canonical URL variable
     this.page.identifier = 6; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    
+
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
     s.src = 'https://kiragoldner.disqus.com/embed.js';
@@ -192,26 +166,17 @@ Own Domain:
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-                          
-                
-
-              </ul><br/><br/></li></ul>
-              
-            </ul> 
+              <br/><br/>
 
         </p>
- 
+
    </div></div>
 
     <div id="buffer"></div>
     <div id="footer">   <div>Created by Kira Goldner</div> </div>
-        
-       <div class="lightdark"><button class="colormode darktoggle" onclick="swapStyleSheet()"></button></div>
 
   </body>
 
 <!--google scholar: http://scholar.google.com/citations?user=3Gk0uc8AAAAJ-->
 
 </html>
-
-<script src="toggledark.js"></script>
