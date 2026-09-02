@@ -37,7 +37,8 @@ div#headpane {
     margin-right:auto;
     margin-top:40px;
     height:auto;
-    width: 950px;
+    width: 100%;
+    max-width: 950px;
 }
 
 div#contentpane {
@@ -71,7 +72,8 @@ div#pagetitle{
     /*margin-left: 10%;*/
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     margin-bottom: 3%; /*previously 4*/
     display: flex;
     justify-content: center;
@@ -241,4 +243,81 @@ table ol {
     margin-right: 2px;
     margin-left: 5px;
     padding-top: 2px;
+}
+
+
+/* =============================================================================
+   Phones and narrow windows
+   ============================================================================= */
+
+/* Nothing should be able to push the page wider than the screen. */
+img {
+    max-width: 100%;
+}
+
+div#content {
+    overflow-wrap: break-word;
+}
+
+/* Wide tables scroll inside their own box instead of stretching the page. */
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+
+    /* The bar and footer join the flow: fixed elements cost too much of a
+       short screen. */
+    .nav {
+        position: static;
+        height: auto;
+        width: auto;
+        margin: 0 -8px 16px;
+        padding: 8px 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav div {
+        padding: 8px 10px;      /* a real tap target */
+    }
+
+    #footer {
+        position: static;
+        margin: 24px 0 12px;
+    }
+
+    #buffer {
+        height: 16px;
+    }
+
+    /* Masthead stacks: photo above the name block. */
+    div#headpane {
+        margin-top: 16px;
+    }
+
+    div#pagetitle {
+        display: block;
+        text-align: center;
+        margin: 0 auto 18px;
+    }
+
+    #headerimg {
+        display: block;
+        margin: 0 auto 14px;
+    }
+
+    div#contentpane {
+        width: auto;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+
+    div#content {
+        top: 0;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }

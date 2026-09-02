@@ -54,6 +54,14 @@ body.narrow-title {
     --pagetitle-width: 700px;
 }
 
+/* The blog and course mastheads run wider than their title block, and hang
+   slightly left of it. This used to be an inline style on 25 separate pages. */
+body.narrow-title #name {
+    width: 750px;
+    max-width: none;   /* deliberately wider than its 700px title block */
+    margin-left: -30px;
+}
+
 
 /* -----------------------------------------------------------------------------
    Page frame
@@ -69,7 +77,8 @@ div#headpane {
     font-weight: bold;
     font-size: medium;
     height: auto;
-    width: 950px;
+    width: 100%;
+    max-width: 950px;
 }
 
 div#contentpane {
@@ -93,7 +102,8 @@ div#pagetitle {
     text-align: left;
     font-family: 'Titillium Web', Optima, Verdana, sans-serif;
     margin: 3% auto;
-    width: var(--pagetitle-width);
+    width: 100%;
+    max-width: var(--pagetitle-width);
 }
 
 div#content {
@@ -103,6 +113,9 @@ div#content {
     margin-right: 40px;
     width: auto;
     font-family: 'Roboto', sans-serif;
+    /* Bare URLs in the prose are single unbreakable words; without this they
+       push the whole page wider than the screen on a phone. */
+    overflow-wrap: break-word;
 }
 
 #buffer {
@@ -360,6 +373,17 @@ a.pdf:hover {
    Masthead: photo, name, contact details
    -------------------------------------------------------------------------- */
 
+/* Never let an image force the page wider than its column. No height:auto here:
+   it would override a height="" attribute (the 15px RSS icon is a 1200px file). */
+#content img, #headerimg img {
+    max-width: 100%;
+}
+
+/* Spacing between images shown side by side. */
+#content img.gutter {
+    margin: 0 25px;
+}
+
 #headerimg {
     margin-right: 30px;
     border: 2px solid var(--bg);
@@ -372,6 +396,7 @@ a.pdf:hover {
 #name {
     display: inline-block;
     width: 535px;
+    max-width: 100%;
     vertical-align: top;
 }
 
@@ -403,6 +428,7 @@ a.pdf:hover {
 #contact {
     display: inline-block;
     width: 300px;
+    max-width: 100%;
     margin-left: 40px;
     vertical-align: top;
     margin-top: 65px;
@@ -443,6 +469,7 @@ a.pdf:hover {
 .researchimg {
     width: 200px;
     height: 200px;
+    max-width: 100%;
     border: 2px solid black;
     display: inline-block;
     clear: left;
@@ -457,6 +484,7 @@ a.pdf:hover {
 .descript {
     display: inline-block;
     width: 600px;
+    max-width: 100%;
     vertical-align: top;
 }
 
@@ -468,6 +496,14 @@ a.pdf:hover {
 /* -----------------------------------------------------------------------------
    Tables (course schedules, reading groups)
    -------------------------------------------------------------------------- */
+
+/* Schedule tables keep their natural width and scroll inside this wrapper
+   rather than pushing the whole page sideways on a narrow screen. */
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+}
 
 .rg {
     border-collapse: collapse;
@@ -556,4 +592,172 @@ span.project2 {
 
 .nospace {
     margin-top: 0px;
+}
+
+
+/* =============================================================================
+   Phones and narrow windows
+
+   Below ~700px the desktop layout stops working: the nav bar and footer are
+   both fixed, which on a short screen leaves almost no room for the page, and
+   the masthead puts a 200px photo beside a 750px name block. Everything here
+   is scoped to the media query, so the desktop layout above is untouched.
+   ============================================================================= */
+
+@media (max-width: 700px) {
+
+    /* The bar joins the flow instead of floating over a short viewport, and
+       wraps onto as many rows as it needs. */
+    .nav {
+        position: static;
+        height: auto;
+        width: auto;
+        margin: 0 -8px 16px;
+        padding: 8px 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 115%;
+    }
+
+    /* The padding has to sit on the link, not the div around it, or the
+       tappable area is just the text (~69x21px). */
+    .nav div {
+        padding: 0;
+    }
+
+    .nav div a {
+        display: block;
+        padding: 11px 12px;
+    }
+
+    /* Its own centred row, or the flex squeeze stacks the three icons. */
+    .links {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 2px;
+    }
+
+    .links a {
+        padding: 8px 10px;
+    }
+
+    .headname {
+        flex-basis: 100%;       /* the name takes its own row */
+        font-size: 150%;
+        padding-bottom: 2px;
+    }
+
+    /* Out of the way of the content, and big enough to hit. It floats over the
+       text, so give it a backing of its own to stay legible. */
+    .lightdark {
+        top: auto;
+        bottom: 14px;
+        right: 14px;
+        background-color: var(--nav-bg);
+        border-radius: 50%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .darktoggle {
+        width: 44px;
+        height: 44px;
+        background-size: 30px 30px;
+    }
+
+    /* Fixed footers cost a phone more than they are worth. */
+    #footer {
+        position: static;
+        margin: 24px 0 12px;
+        font-size: 100%;
+    }
+
+    #buffer {
+        height: 16px;
+    }
+
+    #empty {
+        height: 0;              /* only existed to clear the fixed bar */
+    }
+
+    /* Masthead stacks: photo, then name, then the contact lines. */
+    div#headpane {
+        margin-top: 16px;
+    }
+
+    div#pagetitle {
+        margin: 0 auto 18px;
+        text-align: center;
+    }
+
+    #headerimg {
+        display: block;
+        margin: 0 auto 14px;
+        width: 150px;
+        height: 150px;
+    }
+
+    #name, body.narrow-title #name {
+        display: block;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .myname {
+        margin-top: 0;
+        margin-bottom: 6px;
+        font-size: 200%;
+    }
+
+    .job {
+        font-size: 80%;
+        line-height: 125%;
+    }
+
+    .email {
+        margin-left: 0;
+        font-size: 80%;
+        text-align: center;
+    }
+
+    #contact {
+        display: block;
+        width: auto;
+        margin: 18px 0 0;
+    }
+
+    /* Give the text the full width of the screen, less a comfortable gutter. */
+    div#contentpane {
+        width: auto;
+        margin-top: 0;
+        padding-bottom: 20px;
+        font-size: 105%;
+    }
+
+    div#content {
+        top: 0;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    h1 { font-size: 165%; }
+    h2 { font-size: 140%; }
+
+    /* Floated asides have nothing to sit beside at this width. */
+    .left, .right, .r, .l, .link, .abstract, .researchimg, .descript {
+        float: none;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .researchimg {
+        display: block;
+        margin: 0 auto 16px;
+    }
+
+    /* Side gutters push past a narrow screen once the image itself is
+       already at 100% of the column; stacked, they are not needed. */
+    #content img.gutter {
+        margin: 0;
+    }
 }
